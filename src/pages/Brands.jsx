@@ -1,7 +1,7 @@
 // src/pages/ProductsPage.jsx
 import React, { useEffect, useState, useCallback } from "react";
 import { Link } from "react-router-dom";
-import allData from "../data/form.json";
+import { data as allData } from "../data/form.js";
 
 export default function ProductsPage() {
   

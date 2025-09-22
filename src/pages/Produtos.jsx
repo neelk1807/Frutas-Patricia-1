@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import allData from "../data/form.json";
+import { data as allData } from "../data/form.js";
 import arrow from "../assets/Home/rightarrow.svg"
 
 /* ---------- small UI blocks ---------- */

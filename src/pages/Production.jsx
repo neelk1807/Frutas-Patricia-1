@@ -1,6 +1,16 @@
 import React from "react";
 import BrandMarqueeSlick from "../components/Comman/brandslider.jsx";
 import arrow from "../assets/Home/rightarrow.svg"
+import productsec from "../assets/Home/productsec.jpg";
+import map from "../assets/Production/map.png";
+import brand1 from "../assets/Production/brand1.png";
+import brand2 from "../assets/Production/brand2.png";
+import brand3 from "../assets/Production/brand3.png";
+import brand4 from "../assets/Production/brand4.png";
+import iso from "../assets/Production/iso.png";
+import grace from "../assets/Production/grace.png";
+
+import lelio from "../assets/Empresa/lelio.png"
 
 export default function Productions() {
   return (
@@ -42,7 +52,7 @@ export default function Productions() {
               <div className="order-first lg:order-none">
                 <div className="overflow-hidden rounded-l-2xl shadow-md">
                   <img
-                    src="../src/assets/Home/productsec.jpg"
+                    src={productsec}
                     alt="Produção própria zona oeste"
                     className="w-full h-[300px] sm:h-[520px] lg:h-[700px] object-cover"
                   />
@@ -84,7 +94,7 @@ export default function Productions() {
               <div className="order-first lg:order-none">
                 <div className="overflow-hidden">
                   <img
-                    src="../src/assets/production/map.png"
+                    src={map}
                     alt="Produção própria zona oeste"
                     className="w-full h-auto sm:h-auto md:h-auto lg:h-auto object-cover"
                   />
@@ -104,7 +114,7 @@ export default function Productions() {
               <div className="order-first lg:order-none">
                 <div className="overflow-hidden">
                   <img
-                    src="../src/assets/Empresa/lelio.png"
+                    src={lelio}
                     alt="Produção própria zona oeste"
                     className="w-full h-auto sm:h-auto lg:h-auto object-cover"
                   />
@@ -153,7 +163,7 @@ export default function Productions() {
             <div className="grid grid-cols-2 md:grid-cols-4 items-center gap-x-10 gap-y-8">
               <div className="flex items-center justify-center">
                 <img
-                  src="../src/assets/production/brand1.png"
+                  src={brand1}
                   alt="IFS Food"
                   className="h-auto sm:h-auto md:h-auto w-auto object-cover"
                   loading="lazy"
@@ -161,7 +171,7 @@ export default function Productions() {
               </div>
               <div className="flex items-center justify-center">
                 <img
-                  src="../src/assets/production/brand2.png"
+                  src={brand2}
                   alt="BRC Food Certificated"
                   className="h-auto sm:h-auto md:h-auto w-auto object-cover"
                   loading="lazy"
@@ -169,7 +179,7 @@ export default function Productions() {
               </div>
               <div className="flex items-center justify-center gap-6">
                 <img
-                  src="../src/assets/production/brand3.png"
+                  src={brand3}
                   alt="GLOBALG.A.P."
                   className="h-auto sm:h-auto md:h-auto w-auto object-cover"
                   loading="lazy"
@@ -177,7 +187,7 @@ export default function Productions() {
               </div>
               <div className="flex items-center justify-center gap-6">
                 <img
-                  src="../src/assets/production/brand4.png"
+                  src={brand4}
                   alt="GRASP"
                   className="h-auto sm:h-auto md:h-auto w-auto object-cover"
                   loading="lazy"
@@ -221,7 +231,7 @@ export default function Productions() {
               >
                 <div className="h-40 w-40 sm:h-44 sm:w-44 md:h-50 md:w-50 lg:h-55 lg:w-55">
                   <img
-                    src="../src/assets/production/iso.png"
+                    src={iso}
                     alt="ISO 14001"
                     className="h-full w-full object-cover"
                     loading="lazy"
@@ -235,7 +245,7 @@ export default function Productions() {
               >
                 <div className="h-40 w-40 sm:h-44 sm:w-44 md:h-50 md:w-50 lg:h-55 lg:w-55">
                   <img
-                    src="../src/assets/production/grace.png"
+                    src={grace}
                     alt="GRACE • Empresa Associada"
                     className="h-full w-full object-cover"
                     loading="lazy"

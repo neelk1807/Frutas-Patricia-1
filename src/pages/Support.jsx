@@ -1,5 +1,5 @@
 import React from "react";
-import allSections from "../data/form.json";
+import { data as allSections } from "../data/form.js";
 
 export default function Support() {
   const section = allSections.find((s) => s.id === "support") || {

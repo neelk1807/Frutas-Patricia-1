@@ -6,6 +6,9 @@ import arrow from "../assets/Home/rightarrow.svg"
 import lelio from "../assets/Empresa/lelio.png"
 import propria2 from "../assets/Empresa/propria2.png"
 import propria1 from "../assets/Empresa/propria1.png"
+import hero1 from "../assets/Empresa/hero1.png"
+import hero2 from "../assets/Empresa/hero2.png"
+import hero3 from "../assets/Empresa/hero3.png"
 
 
 
@@ -41,7 +44,7 @@ export default function EmpresaThirtyYears() {
           <div className="mt-10 grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-6">
             <figure className="overflow-hidden rounded-t-2xl shadow-md bg-white/5 mt-1.5">
               <img
-                src="../src/assets/Empresa/hero1.png"
+                src={hero1}
                 alt="Fundadores"
                 className="h-auto sm:h-[32vh] lg:h-[42.8vh] w-full object-cover"
                 loading="lazy"
@@ -50,7 +53,7 @@ export default function EmpresaThirtyYears() {
 
             <figure className="overflow-hidden rounded-t-2xl shadow-md bg-white/5 mt-0 sm:mt-21.5 lg:mt-21">
               <img
-                src="../src/assets/Empresa/hero2.png"
+                src={hero2}
                 alt="Sede"
                 className="h-auto sm:h-[22vh] lg:h-[33.8vh] w-full object-cover"
                 loading="lazy"
@@ -59,7 +62,7 @@ export default function EmpresaThirtyYears() {
 
             <figure className="overflow-hidden rounded-t-2xl shadow-md bg-white/5 mt-1.5">
               <img
-                src="../src/assets/Empresa/hero3.png"
+                src={hero3}
                 alt="Estufas"
                 className="h-auto sm:h-[32vh] lg:h-[42.8vh] w-full object-cover"
                 loading="lazy"

@@ -1,5 +1,13 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import uk from "../assets/Flag/uk.png";
+import es from "../assets/Flag/es.png";
+import pt from "../assets/Flag/pt.png";
+import fb from "../assets/Comman/facebook-fill.svg";
+import ina from "../assets/Comman/instagram-fill.svg";
+import yt from "../assets/Comman/youtube-fill.svg";
+import cross from "../assets/Home/cross.svg";
+
 
 const navItems = [
   { label: "Empresa", href: "/empresa" },
@@ -12,9 +20,9 @@ const navItems = [
 ];
 
 const languages = [
-  { code: "en", src: "../src/assets/Flag/uk.png", label: "English" },
-  { code: "es", src: "../src/assets/Flag/es.png", label: "Español" },
-  { code: "pt", src: "../src/assets/Flag/pt.png", label: "Português" },
+  { code: "en", src: uk, label: "English" },
+  { code: "es", src: es, label: "Español" },
+  { code: "pt", src: pt, label: "Português" },
 ];
 
 export default function Header() {
@@ -44,13 +52,13 @@ export default function Header() {
           <div className="hidden sm:flex items-center gap-4 text-right">
             <span className="sm:inline">Segue-nos nas redes sociais</span>
             <a href="#" className="hover:opacity-80">
-              <img src="../src/assets/Comman/facebook-fill.svg" alt="" />
+              <img src={fb} alt="" />
             </a>
             <a href="#" className="hover:opacity-80">
-              <img src="../src/assets/Comman/instagram-fill.svg" alt="" />
+              <img src={ina} alt="" />
             </a>
             <a href="#" className="hover:opacity-80">
-              <img src="../src/assets/Comman/youtube-fill.svg" alt="" />
+              <img src={yt} alt="" />
             </a>
           </div>
         </div>
@@ -220,7 +228,7 @@ export default function Header() {
             onClick={() => setOpen(false)}
             className="h-9 w-9 flex items-center justify-center rounded-md"
           >
-            <img src="../src/assets/Home/cross.svg" alt="" />
+            <img src={cross} alt="" />
           </button>
         </div>
         <ul className="px-4 py-4 space-y-2 text-[var(--color-gray2)]">

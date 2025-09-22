@@ -7,8 +7,11 @@ import CertificationHero from "../components/Home/Certification.jsx";
 import BrandMarqueeSlick from "../components/Comman/brandslider.jsx";
 import arrow from "../assets/Home/rightarrow.svg";
 import king from "../assets/Home/king.svg";
-import infra1 from "../assets/Home/infra1.jpg"
-import infra2 from "../assets/Home/infra2.jpg"
+import infra1 from "../assets/Home/infra1.jpg";
+import infra2 from "../assets/Home/infra2.jpg";
+import productsec from "../assets/Home/productsec.jpg";
+import videoimage from "../assets/Home/videoimage.png"
+
 
 
 
@@ -49,7 +52,7 @@ export default function Home({
           <div className="flex justify-center md:justify-center mt-10 md:mt-20">
             <div className="relative rounded-t-xl overflow-hidden shadow-lg max-w-7xl w-full">
               <img
-                src="../src/assets/Home/videoimage.png"
+                src={videoimage}
                 alt="Factory"
                 className="w-full h-50 md:h-auto object-cover"
               />
@@ -203,7 +206,7 @@ export default function Home({
               <div className="order-first lg:order-none">
                 <div className="overflow-hidden rounded-l-2xl shadow-md">
                   <img
-                    src="../src/assets/Home/productsec.jpg"
+                    src={productsec}
                     alt="Produção própria zona oeste"
                     className="w-full h-[300px] sm:h-[520px] lg:h-[700px] object-cover"
                   />
