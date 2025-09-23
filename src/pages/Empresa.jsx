@@ -2,13 +2,13 @@ import React from "react";
 import Infraslider from "../components/Empresa/infraslider.jsx";
 import NossaHistoria from "../components/Empresa/history.jsx";
 import BrandMarqueeSlick from "../components/Comman/brandslider.jsx";
-import arrow from "../assets/Home/rightarrow.svg"
-import lelio from "../assets/Empresa/lelio.png"
-import propria2 from "../assets/Empresa/propria2.png"
-import propria1 from "../assets/Empresa/propria1.png"
-import hero1 from "../assets/Empresa/hero1.png"
-import hero2 from "../assets/Empresa/hero2.png"
-import hero3 from "../assets/Empresa/hero3.png"
+import arrow from "../../assets/Home/rightarrow.svg"
+import lelio from "../../assets/Empresa/lelio.png"
+import propria2 from "../../assets/Empresa/propria2.png"
+import propria1 from "../../assets/Empresa/propria1.png"
+import hero1 from "../../assets/Empresa/hero1.png"
+import hero2 from "../../assets/Empresa/hero2.png"
+import hero3 from "../../assets/Empresa/hero3.png"
 
 
 

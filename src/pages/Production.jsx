@@ -1,16 +1,16 @@
 import React from "react";
 import BrandMarqueeSlick from "../components/Comman/brandslider.jsx";
-import arrow from "../assets/Home/rightarrow.svg"
-import productsec from "../assets/Home/productsec.jpg";
-// import map from "../assets/Production/mapp.png";
-import brand1 from "../assets/Production/brand1.png";
-import brand2 from "../assets/Production/brand2.png";
-import brand3 from "../assets/Production/brand3.png";
-import brand4 from "../assets/Production/brand4.png";
-import iso from "../assets/Production/iso.png";
-import grace from "../assets/Production/grace.png";
+import arrow from "../../assets/Home/rightarrow.svg"
+import productsec from "../../assets/Home/productsec.jpg";
+import map from "../../assets/Production/mapp.png";
+import brand1 from "../../assets/Production/brand1.png";
+import brand2 from "../../assets/Production/brand2.png";
+import brand3 from "../../assets/Production/brand3.png";
+import brand4 from "../../assets/Production/brand4.png";
+import iso from "../../assets/Production/iso.png";
+import grace from "../../assets/Production/grace.png";
 
-import lelio from "../assets/Empresa/lelio.png"
+import lelio from "../../assets/Empresa/lelio.png"
 
 export default function Productions() {
   return (
@@ -93,11 +93,11 @@ export default function Productions() {
               {/* Right: Image */}
               <div className="order-first lg:order-none">
                 <div className="overflow-hidden">
-                  {/* <img
+                  <img
                     src={map}
                     alt="Produção própria zona oeste"
                     className="w-full h-auto sm:h-auto md:h-auto lg:h-auto object-cover"
-                  /> */}
+                  />
                 </div>
               </div>
             </div>
