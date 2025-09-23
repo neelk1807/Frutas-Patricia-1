@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+* {
+  font-family: 'Roboto', sans-serif !important;
+}
+@import "tailwindcss";
+
+
+:root {
+  --color-prime: #009b3e;
+  --color-secondary: #d7e0e5;
+  --color-graycustom: #f2f5f6;
+  --color-dark: #12141d;
+  --color-whitecustom: #ffffff;
+  --color-prime2: #92a7b0;
+  --color-catanho: #372716;
+  --color-gray2: #404040;
+}
+
+/* remove slick's default dots */
+.custom-dots li button:before {
+  display: none;
+}
+
+/* grey dots */
+.custom-dots li button.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: #cfd6dc; /* light grey */
+  padding: 0;
+  transition: all 0.25s ease;
+}
+
+/* active = green pill */
+.custom-dots li.slick-active button.dot {
+  width: 30px;
+  height: 10px;
+  background: #059669;
+}
+.slick-dots li {
+  width: 10px;
+}
+
+/* empresa slider */
+.mobile-dots {
+  display: flex !important;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+.mobile-dots li { margin: 0; }
+.mobile-dots li button:before { display: none; }
+.mobile-dots li button {
+  width: 8px; height: 8px; border-radius: 9999px;
+  background: #cfd6dc; transition: transform .25s ease, background-color .25s ease;
+}
+.mobile-dots li.slick-active button {
+  background: #059669; transform: scaleX(3);
+}
