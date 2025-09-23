@@ -3,7 +3,7 @@ import truck1 from "../assets/Distribution/truck1.png";
 import truck2 from "../assets/Distribution/truck2.png";
 
 import support1 from "../assets/Support/support1.png";
-import support2 from "../assets/Support/Support2.png";
+import support2 from "../assets/Support/support2.png";
 
 import product1 from "../assets/Produtos/product1.png";
 import product2 from "../assets/Produtos/product2.png";
