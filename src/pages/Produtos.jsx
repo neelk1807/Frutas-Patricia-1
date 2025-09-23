@@ -84,7 +84,7 @@ export default function Produtos() {
         {/* Section 2 (static title; no "Mais info") */}
         <header className="text-center max-w-3xl mx-auto">
           <h2 className="text-2xl sm:text-3xl lg:text-[60px] py-8 font-bold text-slate-900">
-            Produtos embaladoos
+            Produtos embalados
           </h2>
         </header>
 
