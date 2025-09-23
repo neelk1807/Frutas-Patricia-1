@@ -5,12 +5,12 @@ import HeroSlider from "../components/Home/HeroSlider.jsx";
 import ProductSlider from "../components/Home/ProductSlider.jsx";
 import CertificationHero from "../components/Home/Certification.jsx";
 import BrandMarqueeSlick from "../components/Comman/brandslider.jsx";
-import arrow from "../../assets/Home/rightarrow.svg";
-import king from "../../assets/Home/king.svg";
-import infra1 from "../../assets/Home/infra1.jpg";
-import infra2 from "../../assets/Home/infra2.jpg";
-import productsec from "../../assets/Home/productsec.jpg";
-import videoimage from "../../assets/Home/videoimage.png"
+import arrow from "../assets/Home/rightarrow.svg";
+import king from "../assets/Home/king.svg";
+import infra1 from "../assets/Home/infra1.jpg";
+import infra2 from "../assets/Home/infra2.jpg";
+import productsec from "../assets/Home/productsec.jpg";
+import videoimage from "../assets/Home/videoimage.png"
 
 
 
