@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import uk from "../../assets/Flag/uk.png";
-import es from "../../assets/Flag/es.png";
-import pt from "../../assets/Flag/pt.png";
-import fb from "../../assets/Comman/facebook-fill.svg";
-import ina from "../../assets/Comman/instagram-fill.svg";
-import yt from "../../assets/Comman/youtube-fill.svg";
-import cross from "../../assets/Home/cross.svg";
+import uk from "../assets/Flag/uk.png";
+import es from "../assets/Flag/es.png";
+import pt from "../assets/Flag/pt.png";
+import fb from "../assets/Comman/facebook-fill.svg";
+import ina from "../assets/Comman/instagram-fill.svg";
+import yt from "../assets/Comman/youtube-fill.svg";
+import cross from "../assets/Home/cross.svg";
 
 
 const navItems = [
