@@ -1,4 +1,8 @@
 import React, { useEffect, useState, useCallback } from "react";
+import email from "../../assets/Contact/email.png"
+import phone from "../../assets/Contact/phone.png"
+import map from "../../assets/Contact/map.png"
+
 
 /* ------------- department data for the modal ------------- */
 const departments = [
@@ -96,7 +100,7 @@ export default function ContactStrip() {
           <article className="rounded-2xl bg-[var(--color-whitecustom)] shadow-[0_8px_28px_rgba(0,0,0,0.15)] ring-1 ring-black/5 p-6">
             <div className="flex-1 items-center gap-3">
               <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
-                <img src="../../assets/Contact/email.png" alt="" />
+                <img src={email} alt="" />
               </span>
               <h3 className="text-xl font-semibold text-bg-[var(--color-dark)] mt-4">Email</h3>
             </div>
@@ -132,7 +136,7 @@ export default function ContactStrip() {
           <article className="rounded-2xl bg-[var(--color-whitecustom)] shadow-[0_8px_28px_rgba(0,0,0,0.15)] ring-1 ring-black/5 p-6">
             <div className="flex-1 items-center gap-3">
               <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
-                <img src="../../assets/Contact/phone.png" alt="" />
+                <img src={phone} alt="" />
               </span>
               <h3 className="text-xl mt- font-semibold text-[var(--color-dark)] mt-4">Telefone</h3>
             </div>
@@ -168,7 +172,7 @@ export default function ContactStrip() {
           <article className="rounded-2xl bg-[var(--color-whitecustom)] shadow-[0_8px_28px_rgba(0,0,0,0.15)] ring-1 ring-black/5 p-6">
             <div className="flex-1 items-center gap-3">
               <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
-                <img src="../../assets/Contact/map.png" alt="" />
+                <img src={map} alt="" />
               </span>
               <h3 className="text-xl font-semibold text-[var(--color-dark)] mt-4">
                 Localização

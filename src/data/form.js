@@ -1,4 +1,3 @@
-// Imports
 import truck1 from "../assets/Distribution/truck1.png";
 import truck2 from "../assets/Distribution/truck2.png";
 
