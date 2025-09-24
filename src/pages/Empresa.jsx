@@ -9,6 +9,8 @@ import propria1 from "../assets/Empresa/propria1.png"
 import hero1 from "../assets/Empresa/hero1.png"
 import hero2 from "../assets/Empresa/hero2.png"
 import hero3 from "../assets/Empresa/hero3.png"
+import hero4 from "../assets/Empresa/hero4.png"
+
 
 
 
@@ -71,7 +73,7 @@ export default function EmpresaThirtyYears() {
 
             <figure className="overflow-hidden rounded-t-2xl shadow-md bg-white/5 mt-0 sm:mt-21.5 lg:mt-21">
               <img
-                src="../src/assets/Empresa/hero4.png"
+                src={hero4}
                 alt="Frota"
                 className="h-auto sm:h-[22vh] lg:h-[33.8vh] w-full object-cover"
                 loading="lazy"
