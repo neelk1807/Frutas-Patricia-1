@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaInstagram,
@@ -103,9 +104,9 @@ export default function Footer() {
             <ul className="mt-5 space-y-3 text-[var(--color-gray2)]">
               {leftPages.map((i) => (
                 <li key={i.label}>
-                  <a className="hover:text-emerald-700" href={i.href}>
+                  <Link to={i.href} className="hover:text-emerald-700" >
                     {i.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -119,9 +120,9 @@ export default function Footer() {
             <ul className="mt-5 space-y-3 text-[var(--color-gray2)]">
               {rightPages.map((i) => (
                 <li key={i.label}>
-                  <a className="hover:text-emerald-700" href={i.href}>
+                  <Link to={i.href} className="hover:text-emerald-700">
                     {i.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -164,19 +165,19 @@ export default function Footer() {
           <p>©2025 DEVTECH.</p>
           <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 justify-center">
             <li>
-              <a className="hover:text-[#009B3E]" href="/code-of-ethics">
+              <Link to={"/code-of-ethics"} className="hover:text-[#009B3E]">
                 Código de ética e conduta
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="hover:text-[#009B3E]" href="support">
+              <Link to={"/support"} className="hover:text-[#009B3E]">
                 Apoios
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="hover:text-[#009B3E]" href="privacy-policy">
+              <Link to={"/privacy-policy"} className="hover:text-[#009B3E]">
                 Política de privacidade
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
