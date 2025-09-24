@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { data as allData } from "../data/form.js";
-import arrow from "../assets/Home/rightarrow.svg"
+import arrow from "../assets/Home/rightarrow.svg";
 
 /* ---------- small UI blocks ---------- */
 const ProductCard = ({ name, img, showInfo = true }) => (
@@ -60,7 +60,9 @@ export default function Produtos() {
             As nossas especialidades
           </h2>
           <p className="mt-3 text-xs sm:text-sm lg:text-xl pb-8 text-slate-700">
-            Oferecemos uma gama diversificada de produtos de alta qualidade, disponíveis durante todo o ano e com distribuição garantida nos mercados nacional e internacional.
+            Oferecemos uma gama diversificada de produtos de alta qualidade,
+            disponíveis durante todo o ano e com distribuição garantida nos
+            mercados nacional e internacional.
           </p>
         </header>
 

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import uk from "../assets/Flag/uk.png";
 import es from "../assets/Flag/es.png";
@@ -45,9 +46,9 @@ export default function Header() {
                 geral@patriciapilar.pt
               </a>
             </span>
-            <a href="#recrutamento" className="hover:opacity-80">
+            <Link to={"/job"} className="hover:opacity-80">
               Recrutamento
-            </a>
+            </Link>
           </div>
           <div className="hidden sm:flex items-center gap-4 text-right">
             <span className="sm:inline">Segue-nos nas redes sociais</span>
