@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import {FaLinkedinIn} from "react-icons/fa";
 import uk from "../assets/Flag/uk.png";
 import es from "../assets/Flag/es.png";
 import pt from "../assets/Flag/pt.png";
 import fb from "../assets/Comman/facebook-fill.svg";
 import ina from "../assets/Comman/instagram-fill.svg";
-import yt from "../assets/Comman/youtube-fill.svg";
 import cross from "../assets/Home/cross.svg";
 
 
@@ -59,7 +59,7 @@ export default function Header() {
               <img src={ina} alt="" />
             </a>
             <a href="#" className="hover:opacity-80">
-              <img src={yt} alt="" />
+              <FaLinkedinIn />
             </a>
           </div>
         </div>

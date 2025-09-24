@@ -119,8 +119,8 @@ export default function Home({
                   instalações do sector, no país.
                 </p>
                 <div className="mt-8 flex justify-center lg:justify-start">
-                  <button className="inline-flex items-center gap-4 rounded-full px-6 py-3 text-sm font-semibold shadow-sm ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
-                    Conhecer infra-estruturas
+                  <button onClick={() => window.location.href = "/empresa"} className="inline-flex items-center gap-4 rounded-full px-6 py-3 text-sm font-semibold shadow-sm ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
+                    conhecer infraestruturas
                     <div className="arrow bg-[#27a95b] rounded-full p-1">
                       <img src={arrow} alt="" />
                     </div>
@@ -194,7 +194,7 @@ export default function Home({
                 </p>
 
                 <div className="mt-8 flex justify-center lg:justify-start">
-                  <button className="inline-flex items-center gap-3 rounded-full px-6 py-3 text-sm font-semibold shadow-sm cursor-pointer ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
+                  <button onClick={() => window.location.href = "/production"} className="inline-flex items-center gap-3 rounded-full px-6 py-3 text-sm font-semibold shadow-sm cursor-pointer ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
                     Ver mais
                     <div className="arrow bg-[#27a95b] rounded-full p-1">
                       <img src={arrow} alt="" />

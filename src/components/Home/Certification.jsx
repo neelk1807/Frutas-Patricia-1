@@ -12,7 +12,7 @@ export default function CertificationHero({
   title = "as nossas\ncertificações",
   description = "O nosso Departamento de Qualidade da trabalha continuamente de forma a implementar diversas normas, que visam assegurar e garantir a segurança alimentar do consumidor final.",
   ctaText = "Ver mais",
-  onCtaClick = () => {},
+  onCtaClick = () => {window.location.href = "/production";},
 }) {
   return (
     <section className="w-full bg-[var(--color-whitecustom)]">
