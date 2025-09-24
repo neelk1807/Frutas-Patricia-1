@@ -81,16 +81,16 @@ export default function Footer() {
 
             {/* Socials */}
             <div className="mt-6 flex items-center gap-3">
-              <Social href="#" label="Facebook">
+              <Social href="https://www.facebook.com/frutaspatriciapilar.lda/" label="Facebook">
                 <FaFacebookF />
               </Social>
-              <Social href="#" label="Instagram">
+              <Social href="https://www.instagram.com/frutaspatriciapilar/" label="Instagram">
                 <FaInstagram />
               </Social>
-              <Social href="#" label="LinkedIn">
+              <Social href="https://www.linkedin.com/company/frutaspatriciapilar" label="LinkedIn">
                 <FaLinkedinIn />
               </Social>
-              <Social href="#" label="YouTube">
+              <Social href="https://www.youtube.com/@frutaspatriciapilar6362" label="YouTube">
                 <FaYoutube />
               </Social>
             </div>
