@@ -1,6 +1,5 @@
 import React from "react";
 import BrandMarqueeSlick from "../components/Comman/brandslider.jsx";
-import arrow from "../assets/Home/rightarrow.svg"
 import productsec from "../assets/Home/productsec.jpg";
 import map from "../assets/production/mapp.png";
 import brand1 from "../assets/production/brand1.png";
@@ -10,7 +9,7 @@ import brand4 from "../assets/production/brand4.png";
 import iso from "../assets/production/iso.png";
 import grace from "../assets/production/grace.png";
 
-import lelio from "../assets/Empresa/lelio.png"
+import lelio from "../assets/Empresa/lelio.png";
 
 export default function Productions() {
   return (
@@ -23,30 +22,21 @@ export default function Productions() {
               <div className="text-center lg:text-left justify-end sm:justify-center md:justify-center lg:justify-end grid px-5">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
                   <span className="text-[var(--color-prime)]">
-                    A nossa produção
-                  </span>
-                  <br />
-                  <span className="text-[var(--color-dark)]">
-                    importância da  
-                    <br />
-                    zona oeste
+                    O melhor da produção nacional
                   </span>
                 </h2>
 
                 <p className="mt-6 text-[var(--color-gray2)] text-base sm:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
-                  Orgulhamo-nos de produzir diversos produtos em várias regiões
-                  do país, tirando proveito das características próprias de cada
-                  solo e micro-climas únicos.
+                  Orgulhamo-nos de produzir uma vasta gama de produtos em
+                  diferentes regiões de Portugal, aproveitando ao máximo as
+                  particularidades de cada território. A diversidade dos solos e
+                  os microclimas únicos de norte a sul permitem-nos cultivar com
+                  excelência, respeitando o ritmo da natureza e valorizando o
+                  que cada região tem de melhor. Esta abordagem garante produtos
+                  autênticos, com identidade própria, e reforça o nosso
+                  compromisso com a produção nacional, sustentável e de
+                  qualidade.
                 </p>
-
-                <div className="mt-8 flex justify-center lg:justify-start">
-                  <button className="inline-flex items-center gap-3 rounded-full px-6 py-3 text-sm font-semibold shadow-sm cursor-pointer ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
-                    Ver mais
-                    <div className="arrow bg-[#27a95b] rounded-full p-1">
-                      <img src={arrow} alt="" />
-                    </div>
-                  </button>
-                </div>
               </div>
               {/* Right: Image */}
               <div className="order-first lg:order-none">
@@ -74,7 +64,7 @@ export default function Productions() {
                   <span className="text-[var(--color-whitecustom)]">
                     Produção própria:
                     <br />
-                    a importância da  <br /> Zona Oeste
+                    a importância da <br /> Zona Oeste
                   </span>
                 </h2>
 
@@ -85,9 +75,9 @@ export default function Productions() {
                   Portugal.
                 </p>
                 <p className="mt-6 text-[var(--color-whitecustom)] text-justify text-base sm:text-lg lg:text-xl leading-relaxed max-w-lg mx-auto lg:mx-0">
-                   O equilíbrio entre a brisa marítima e a temperatura
-                  constante ao longo do ano faz desta uma das melhores áreas da
-                  Europa para a agricultura.
+                  O equilíbrio entre a brisa marítima e a temperatura constante
+                  ao longo do ano faz desta uma das melhores áreas da Europa
+                  para a agricultura.
                 </p>
               </div>
               {/* Right: Image */}
@@ -127,9 +117,9 @@ export default function Productions() {
                   <span className="text-[var(--color-prime)]">Qualidade:</span>
                   <br />
                   <span className="text-[var(--color-dark)]">
-                    as nossas certificações  
+                    as nossas certificações
                   </span>
-                </h2>  
+                </h2>
 
                 <p className="mt-6 text-[var(--color-gray2)] text-base sm:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
                   O nosso Departamento de Qualidade da trabalha continuamente de
@@ -141,15 +131,6 @@ export default function Productions() {
                   com uma seleção dos melhores produtos que chegam até ao
                   consumidor diariamente, com a melhor frescura e qualidade.
                 </p>
-
-                <div className="mt-8 flex justify-center lg:justify-start">
-                  <button className="inline-flex items-center gap-3 rounded-full px-6 py-3 text-sm font-semibold shadow-sm cursor-pointer ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
-                    Ver mais
-                    <div className="arrow bg-[#27a95b] rounded-full p-1">
-                      <img src={arrow} alt="" />
-                    </div>
-                  </button>
-                </div>
               </div>
             </div>
           </div>
@@ -209,17 +190,17 @@ export default function Productions() {
               </h2>
 
               <p className="mt-6 text-[var(--color-gray2)] text-base sm:text-lg lg:text-xl leading-relaxed text-justify">
-                Apostamos em materiais mais sustentáveis, que encontrem um
-                equilíbrio com o meio ambiente, e em simultâneo trabalhamos na
-                cultura interna da empresa de forma a incutir em toda a equipa
-                FPP, essa atitude e responsabilidade.
-              </p>
-
-              <p className="mt-6 text-[var(--color-gray2)] text-base sm:text-lg lg:text-xl leading-relaxed text-justify">
-                Visamos que a responsabilidade deixe de ser uma obrigação, mas
-                sim um ato de consciência, e que a mensagem acabe por passar à
-                população em geral. Face às metas acima mencionadas temos como
-                objectivo implementar a norma ISO140001.
+                Na Frutas Patrícia Pilar, assumimos o compromisso de adoptar
+                práticas mais sustentáveis, promovendo o equilíbrio com o meio
+                ambiente através da escolha consciente de materiais.
+                Paralelamente, investimos na cultura interna da empresa,
+                incutindo em toda a equipa uma atitude responsável e alinhada
+                com estes valores. Acreditamos que a responsabilidade ambiental
+                deve ser encarada como um ato de consciência, e não apenas como
+                uma obrigação. Como reflexo deste compromisso, somos
+                certificados com a norma ISO 14001 e associados à GRACE –
+                Empresas Responsáveis, reforçando a nossa dedicação à
+                sustentabilidade e à melhoria contínua.
               </p>
             </div>
 
