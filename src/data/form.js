@@ -9,6 +9,9 @@ import product1 from "../assets/Produtos/product1.png";
 import product2 from "../assets/Produtos/product2.png";
 import product3 from "../assets/Produtos/product3.png";
 import product4 from "../assets/Produtos/product4.png";
+import product13 from "../assets/Produtos/product13.jpg";
+import product14 from "../assets/Produtos/product14.png";
+import product15 from "../assets/Produtos/product15.jpg";
 import product5 from "../assets/Produtos/product5.png";
 import product6 from "../assets/Produtos/product6.png";
 import product7 from "../assets/Produtos/product7.png";
@@ -17,6 +20,10 @@ import product9 from "../assets/Produtos/product9.png";
 import product10 from "../assets/Produtos/product10.png";
 import product11 from "../assets/Produtos/product11.png";
 import product12 from "../assets/Produtos/product12.png";
+import product16 from "../assets/Produtos/product16.png";
+import product17 from "../assets/Produtos/product17.png";
+import product18 from "../assets/Produtos/product18.png";
+import product19 from "../assets/Produtos/product19.png";
 
 import eproduct1 from "../assets/Produtos/eproduct1.png";
 import eproduct2 from "../assets/Produtos/eproduct2.png";
@@ -112,14 +119,21 @@ export const data = [
       { name: "Tomate Rama", img: product2 },
       { name: "Tomate Coração de Boi", img: product3 },
       { name: "Tomate Chucha", img: product4 },
+      { name: "Tomate Azul", img: product13 },
+      { name: "Tomate Chocolate", img: product14 },
+      { name: "Tomate Rosa", img: product15 },
       { name: "Pera Rocha", img: product5 },
       { name: "Maçã Fuji", img: product6 },
+      { name: "Maçã Royal Gala", img: product18 },
       { name: "Maçã Reineta", img: product7 },
       { name: "Courgete", img: product8 },
+      { name: "Pepino", img: product19 },
       { name: "Feijão Verde", img: product9 },
+      { name: "Pimento", img: product16 },
       { name: "Batata Doce", img: product10 },
       { name: "Abóbora Butternut", img: product11 },
       { name: "Abóbora Comprida", img: product12 },
+      { name: "Abóbora Musquee de Provence", img: product17 },
     ],
   },
   {
