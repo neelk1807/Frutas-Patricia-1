@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaInstagram,
-  FaLinkedinIn, 
+  FaLinkedinIn,
   FaYoutube,
 } from "react-icons/fa";
 import { FiMapPin, FiMail, FiPhone } from "react-icons/fi";
@@ -18,7 +18,7 @@ const leftPages = [
 
 const rightPages = [
   { label: "Recrutamento", href: "/job" },
-  { label: "Leilão", href: "/auction" },
+  { label: "Leilão", href: "https://leilao.patriciapilar.pt/login.php" },
   { label: "Apoios", href: "/support" },
   { label: "Código de ética e conduta", href: "/code-of-ethics" },
 ];
@@ -76,21 +76,34 @@ export default function Footer() {
               />
             </div>
             <p className="mt-5 max-w-xs text-[var(--color-gray2)]">
-              Empresa de importação e exportação em A-do-Cunhados e na Maceira
+              Empresa dedicada à produção, comercialização e distribuição de
+              produtos hortofrutícolas
             </p>
 
             {/* Socials */}
             <div className="mt-6 flex items-center gap-3">
-              <Social href="https://www.facebook.com/frutaspatriciapilar.lda/" label="Facebook">
+              <Social
+                href="https://www.facebook.com/frutaspatriciapilar.lda/"
+                label="Facebook"
+              >
                 <FaFacebookF />
               </Social>
-              <Social href="https://www.instagram.com/frutaspatriciapilar/" label="Instagram">
+              <Social
+                href="https://www.instagram.com/frutaspatriciapilar/"
+                label="Instagram"
+              >
                 <FaInstagram />
               </Social>
-              <Social href="https://www.linkedin.com/company/frutaspatriciapilar" label="LinkedIn">
+              <Social
+                href="https://www.linkedin.com/company/frutaspatriciapilar"
+                label="LinkedIn"
+              >
                 <FaLinkedinIn />
               </Social>
-              <Social href="https://www.youtube.com/@frutaspatriciapilar6362" label="YouTube">
+              <Social
+                href="https://www.youtube.com/@frutaspatriciapilar6362"
+                label="YouTube"
+              >
                 <FaYoutube />
               </Social>
             </div>
@@ -99,12 +112,12 @@ export default function Footer() {
           {/* Pages column 1 */}
           <div className="md:col-span-2">
             <h3 className="text-xl font-semibold text-[var(--color-prime)]">
-              Páginas
+              Menu
             </h3>
             <ul className="mt-5 space-y-3 text-[var(--color-gray2)]">
               {leftPages.map((i) => (
                 <li key={i.label}>
-                  <Link to={i.href} className="hover:text-emerald-700" >
+                  <Link to={i.href} className="hover:text-emerald-700">
                     {i.label}
                   </Link>
                 </li>
@@ -115,7 +128,7 @@ export default function Footer() {
           {/* Pages column 2 */}
           <div className="md:col-span-2">
             <h3 className="text-xl font-semibold text-[var(--color-prime)]">
-              Páginas
+              Úteis
             </h3>
             <ul className="mt-5 space-y-3 text-[var(--color-gray2)]">
               {rightPages.map((i) => (
@@ -172,6 +185,11 @@ export default function Footer() {
             <li>
               <Link to={"/support"} className="hover:text-[#009B3E]">
                 Apoios
+              </Link>
+            </li>
+            <li>
+              <Link to={"https://www.livroreclamacoes.pt/Inicio/"} className="hover:text-[#009B3E]">
+                Livro de Reclamações
               </Link>
             </li>
             <li>
