@@ -1,14 +1,16 @@
 import React from "react";
 import { data as allSections } from "../data/form.js";
+import icon1 from "../assets/Empresa/icon1.png";
+import icon3 from "../assets/Empresa/icon3.png";
 
 export default function Distribution() {
   const section = allSections.find((s) => s.id === "distribution") || {
     images: [],
   };
   const stats = [
-    { value: "53", label: "viaturas" },
-    { value: "18", label: "Países" },
-    { value: "182M", label: "expedições por ano" },
+    { value: "+50", label: "viaturas" },
+    { value: "+18", label: "Países" },
+    { value: "+182M", label: "expedições por ano" },
   ];
   return (
     <div className="max-w-auto mx-auto">
@@ -102,7 +104,7 @@ export default function Distribution() {
             {/* Card 1 */}
             <article className="h-full rounded-2xl bg-[var(--color-prime)] text-[var(--color-whitecustom)] shadow-lg ring-1 ring-black/5 p-6 sm:p-8 flex flex-col max-w-full lg:max-w-sm">
               <img
-                src="../src/assets/Empresa/icon1.png"
+                src={icon1}
                 alt=""
                 className="h-25 w-25 mb-4 sm:mb-6 opacity-95"
                 loading="lazy"
@@ -123,7 +125,7 @@ export default function Distribution() {
             {/* Card 2 */}
             <article className="h-full rounded-2xl bg-[var(--color-prime)] text-[var(--color-whitecustom)] shadow-lg ring-1 ring-black/5 p-6 sm:p-8 flex flex-col max-w-full lg:max-w-sm">
               <img
-                src="../src/assets/Empresa/icon3.png"
+                src={icon3}
                 alt=""
                 className="h-25 w-25 mb-4 sm:mb-6 opacity-95"
                 loading="lazy"

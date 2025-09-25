@@ -1,4 +1,7 @@
 import React, { useEffect, useState, useCallback } from "react";
+import email from "../../assets/Contact/email.png";
+import phone from "../../assets/Contact/phone.png";
+import map from "../../assets/Contact/map.png";
 
 /* ------------- department data for the modal ------------- */
 const departments = [
@@ -96,7 +99,7 @@ export default function ContactStrip() {
           <article className="rounded-2xl bg-[var(--color-whitecustom)] shadow-[0_8px_28px_rgba(0,0,0,0.15)] ring-1 ring-black/5 p-6">
             <div className="flex-1 items-center gap-3">
               <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
-                <img src="../../assets/Contact/email.png" alt="" />
+                <img src={email} alt="" />
               </span>
               <h3 className="text-xl font-semibold text-bg-[var(--color-dark)] mt-4">Email</h3>
             </div>
@@ -106,25 +109,10 @@ export default function ContactStrip() {
             </p>
 
             <button
-              onClick={() => setModalOpen(true)}
+              onClick={() => window.location.href = "mailto:geral@patriciapilar.pt"}
               className="mt-5 inline-flex items-center gap-2 font-semibold text-[var(--color-prime)] hover:text-emerald-700 cursor-pointer"
             >
-              Enviar email
-              <span className="inline-grid place-items-center rounded-ful text-[var(--color-whitecustom)] w-5 h-5">
-                {/* right arrow icon */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4"
-                  viewBox="0 0 20 20"
-                  fill="#009b3e"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 11-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </span>
+              geral@patriciapilar.pt
             </button>
           </article>
 
@@ -132,7 +120,7 @@ export default function ContactStrip() {
           <article className="rounded-2xl bg-[var(--color-whitecustom)] shadow-[0_8px_28px_rgba(0,0,0,0.15)] ring-1 ring-black/5 p-6">
             <div className="flex-1 items-center gap-3">
               <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
-                <img src="../../assets/Contact/phone.png" alt="" />
+                <img src={phone} alt="" />
               </span>
               <h3 className="text-xl mt- font-semibold text-[var(--color-dark)] mt-4">Telefone</h3>
             </div>
@@ -168,7 +156,7 @@ export default function ContactStrip() {
           <article className="rounded-2xl bg-[var(--color-whitecustom)] shadow-[0_8px_28px_rgba(0,0,0,0.15)] ring-1 ring-black/5 p-6">
             <div className="flex-1 items-center gap-3">
               <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
-                <img src="../../assets/Contact/map.png" alt="" />
+                <img src={map} alt="" />
               </span>
               <h3 className="text-xl font-semibold text-[var(--color-dark)] mt-4">
                 Localização
@@ -180,7 +168,7 @@ export default function ContactStrip() {
             </p>
 
             <a
-              href="https://maps.google.com"
+              href="https://maps.app.goo.gl/CVMjXaqMgQmVcpV16"
               target="_blank"
               rel="noreferrer"
               className="mt-5 inline-flex items-center gap-2 font-semibold text-[var(--color-prime)] hover:text-emerald-700 cursor-pointer"

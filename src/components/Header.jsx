@@ -16,7 +16,7 @@ const navItems = [
   { label: "Produção", href: "/production" },
   { label: "Marcas", href: "/brands" },
   { label: "Distribuição", href: "/distribution" },
-  { label: "Leilão", href: "/auction" },
+  { label: "Leilão", href: "https://leilao.patriciapilar.pt/login.php" },
   { label: "Contactos", href: "/contact" },
 ];
 
