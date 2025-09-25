@@ -114,7 +114,7 @@ export default function Footer() {
             <h3 className="text-xl font-semibold text-[var(--color-prime)]">
               Menu
             </h3>
-            <ul className="mt-5 space-y-3 text-[var(--color-gray2)]">
+            <ul className="mt-3 space-y-3 text-[var(--color-gray2)]">
               {leftPages.map((i) => (
                 <li key={i.label}>
                   <Link to={i.href} className="hover:text-emerald-700">
@@ -130,7 +130,7 @@ export default function Footer() {
             <h3 className="text-xl font-semibold text-[var(--color-prime)]">
               Úteis
             </h3>
-            <ul className="mt-5 space-y-3 text-[var(--color-gray2)]">
+            <ul className="mt-3 space-y-3 text-[var(--color-gray2)]">
               {rightPages.map((i) => (
                 <li key={i.label}>
                   <Link to={i.href} className="hover:text-emerald-700">
@@ -146,7 +146,7 @@ export default function Footer() {
             <h3 className="text-xl font-semibold text-[var(--color-prime)]">
               Contactos
             </h3>
-            <ul className="mt-5 space-y-4 text-[var(--color-gray2)]">
+            <ul className="mt-3 space-y-4 text-[var(--color-gray2)]">
               <Contact
                 icon={<FiMapPin />}
                 text={

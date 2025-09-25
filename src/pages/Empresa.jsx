@@ -2,18 +2,16 @@ import React from "react";
 import Infraslider from "../components/Empresa/infraslider.jsx";
 import NossaHistoria from "../components/Empresa/history.jsx";
 import BrandMarqueeSlick from "../components/Comman/brandslider.jsx";
-import arrow from "../assets/Home/rightarrow.svg"
-import lelio from "../assets/Empresa/lelio.png"
-import propria2 from "../assets/Empresa/propria2.png"
-import propria1 from "../assets/Empresa/propria1.png"
-import hero1 from "../assets/Empresa/hero1.png"
-import hero2 from "../assets/Empresa/hero2.png"
-import hero3 from "../assets/Empresa/hero3.png"
-import hero4 from "../assets/Empresa/hero4.png"
-
-
-
-
+import lelio from "../assets/Empresa/lelio.png";
+import propria2 from "../assets/Empresa/propria2.png";
+import propria1 from "../assets/Empresa/propria1.png";
+import icon1 from "../assets/Empresa/icon1.png";
+import icon2 from "../assets/Empresa/icon2.png";
+import icon3 from "../assets/Empresa/icon3.png";
+import hero1 from "../assets/Empresa/hero1.png";
+import hero2 from "../assets/Empresa/hero2.png";
+import hero3 from "../assets/Empresa/hero3.png";
+import hero4 from "../assets/Empresa/hero4.png";
 
 export default function EmpresaThirtyYears() {
   return (
@@ -161,7 +159,7 @@ export default function EmpresaThirtyYears() {
               {/* Card 1 */}
               <article className="h-full rounded-2xl bg-[var(--color-prime)] text-[var(--color-whitecustom)] shadow-lg ring-1 ring-black/5 p-6 sm:p-8 flex flex-col">
                 <img
-                  src="../src/assets/Empresa/icon1.png"
+                  src={icon1}
                   alt=""
                   className="h-25 w-25 mb-4 sm:mb-6 opacity-95"
                   loading="lazy"
@@ -190,7 +188,7 @@ export default function EmpresaThirtyYears() {
               {/* Card 2 */}
               <article className="h-full rounded-2xl bg-[var(--color-prime)] text-[var(--color-whitecustom)] shadow-lg ring-1 ring-black/5 p-6 sm:p-8 flex flex-col">
                 <img
-                  src="../src/assets/Empresa/icon2.png"
+                  src={icon2}
                   alt=""
                   className="h-25 w-25 mb-4 sm:mb-6 opacity-95"
                   loading="lazy"
@@ -218,7 +216,7 @@ export default function EmpresaThirtyYears() {
               {/* Card 3 */}
               <article className="h-full rounded-2xl bg-[var(--color-prime)] text-[var(--color-whitecustom)] shadow-lg ring-1 ring-black/5 p-6 sm:p-8 flex flex-col">
                 <img
-                  src="../src/assets/Empresa/icon3.png"
+                  src={icon3}
                   alt=""
                   className="h-25 w-25 mb-4 sm:mb-6 opacity-95"
                   loading="lazy"
@@ -270,24 +268,18 @@ export default function EmpresaThirtyYears() {
                 </h2>
 
                 <p className="mt-6 text-[var(--color-gray2)] text-base sm:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
-                  O nosso leilão, permite uma ligação direta entre a produção e
-                  o comércio tradicional. Estamos recetivos a novos produtores
-                  desde que garantam os nossos padrões de qualidade e segurança
-                  alimentar e se enquadrem na gama de artigos que trabalhamos.
-                  Atualmente, sabemos que o preço e a qualidade já não são
-                  fatores de diferenciação. As nossas linhas estratégicas
-                  permitem-nos uma diferenciação pela garantia de estabilidade,
-                  da oferta e do escoamento.
+                  O nosso leilão estabelece uma ligação direta entre produção e
+                  comércio tradicional, com parcerias baseadas na qualidade,
+                  segurança alimentar e alinhamento com a nossa gama de
+                  produtos. Garantimos estabilidade na oferta e soluções
+                  eficazes para o escoamento, assegurando o fornecimento
+                  contínuo dos produtos mais procurados e complementando a
+                  produção com capacidade comercial instalada. Os nossos canais
+                  de distribuição permitem escoar a capacidade produtiva com
+                  condições justas e competitivas, para que os produtores se
+                  concentrem na excelência da produção enquanto nós tratamos da
+                  comercialização com eficácia.
                 </p>
-
-                <div className="mt-8 flex justify-center lg:justify-start">
-                  <button className="inline-flex items-center gap-3 rounded-full px-6 py-3 text-sm font-semibold shadow-sm cursor-pointer ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
-                    Ver mais
-                    <div className="arrow bg-[#27a95b] rounded-full p-1">
-                      <img src={arrow} alt="" />
-                    </div>
-                  </button>
-                </div>
               </div>
             </div>
           </div>
