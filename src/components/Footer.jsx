@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  FaFacebookF,
+  FaFacebookF, 
   FaInstagram,
   FaLinkedinIn,
   FaYoutube,

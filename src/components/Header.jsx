@@ -52,13 +52,13 @@ export default function Header() {
           </div>
           <div className="hidden sm:flex items-center gap-4 text-right">
             <span className="sm:inline">Segue-nos nas redes sociais</span>
-            <a href="#" className="hover:opacity-80">
+            <a href="https://www.facebook.com/frutaspatriciapilar.lda/" className="hover:opacity-80">
               <img src={fb} alt="" />
             </a>
-            <a href="#" className="hover:opacity-80">
+            <a href="https://www.instagram.com/frutaspatriciapilar/" className="hover:opacity-80">
               <img src={ina} alt="" />
             </a>
-            <a href="#" className="hover:opacity-80">
+            <a href="https://www.linkedin.com/company/frutaspatriciapilar" className="hover:opacity-80">
               <FaLinkedinIn />
             </a>
           </div>
