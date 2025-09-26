@@ -51,58 +51,51 @@ const DEFAULT_LOGOS = [
 
 export default function BrandMarqueeSlick({
   items,
-  visible = 9,
   interval = 3000,
   pauseOnHover = true,
   className = "bg-[var(--color-prime)]",
 }) {
   const sliderRef = useRef(null);
   const [paused, setPaused] = useState(false);
+  const [slidesToShow, setSlidesToShow] = useState(9); // default desktop
 
   const base = useMemo(() => (items?.length ? items : DEFAULT_LOGOS), [items]);
 
-  const looped = useMemo(() => {
-    if (!base.length) return [];
-    const target = visible + 1;
-    if (base.length >= target) return base;
-    const copies = Math.ceil(target / base.length);
-    return Array.from({ length: copies })
-      .flatMap(() => base)
-      .slice(0, target);
-  }, [base, visible]);
-
+  // 🔹 Manual breakpoints
   useEffect(() => {
-    if (looped.length === 0) return;
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width >= 1280) setSlidesToShow(9);   // xl+
+      else if (width >= 1024) setSlidesToShow(7); // lg
+      else if (width >= 768) setSlidesToShow(5);  // md
+      else if (width >= 480) setSlidesToShow(3);  // sm
+      else setSlidesToShow(2); // xs
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // 🔹 Auto advance
+  useEffect(() => {
+    if (!base.length) return;
     const id = setInterval(() => {
       if (!paused) sliderRef.current?.slickNext();
     }, interval);
     return () => clearInterval(id);
-  }, [interval, paused, looped.length]);
+  }, [interval, paused, base.length]);
 
   const settings = {
     arrows: false,
     dots: false,
-    infinite: looped.length > visible,
+    infinite: true,
     speed: 450,
-    slidesToShow: visible,
-    slidesToScroll: 1, 
+    slidesToShow,
+    slidesToScroll: 1,
     swipeToSlide: true,
     touchMove: true,
-    autoplay: false, 
+    autoplay: false,
     cssEase: "linear",
-    responsive: [
-      {
-        breakpoint: 1280,
-        settings: { slidesToShow: Math.max(visible - 2, 6) },
-      },
-      {
-        breakpoint: 1024,
-        settings: { slidesToShow: Math.max(visible - 4, 6) },
-      },
-      { breakpoint: 768, settings: { slidesToShow: Math.max(visible - 6, 4) } },
-      { breakpoint: 640, settings: { slidesToShow: Math.max(visible - 7, 4) } },
-      { breakpoint: 480, settings: { slidesToShow: 3 } },
-    ],
   };
 
   return (
@@ -111,14 +104,14 @@ export default function BrandMarqueeSlick({
       onMouseEnter={() => pauseOnHover && setPaused(true)}
       onMouseLeave={() => pauseOnHover && setPaused(false)}
     >
-      <div className="mx-auto  px-4 sm:px-6">
+      <div className="mx-auto px-4 sm:px-6">
         <Slider ref={sliderRef} {...settings}>
-          {looped.map((logo, idx) => (
+          {base.map((logo, idx) => (
             <div key={`${logo.src}-${idx}`} className="px-4">
               <img
                 src={logo.src}
                 alt={logo.alt || "brand"}
-                className="h-20 sm:h-20 w-full py-3 object-contain mx-auto select-none items-center"
+                className="h-16 sm:h-20 w-full py-3 object-contain mx-auto select-none"
                 draggable="false"
                 loading="lazy"
               />
