@@ -61,9 +61,9 @@ export default function ProductsPage() {
       {/* ===== Modal shared by both sections ===== */}
       {active && (
         <Modal onClose={onClose}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-5">
+          <div className="flex flex-col justify-center items-center sm:text-start sm:grid sm:grid-cols-1 md:grid-cols-2 gap-8 p-5">
             <div className="w-full">
-              <h3 className="text-3xl sm:text-4xl font-extrabold text-slate-900">
+              <h3 className="text-center sm:text-start text-3xl sm:text-4xl font-extrabold text-slate-900">
                 {active.name}
               </h3>
 
@@ -89,16 +89,18 @@ export default function ProductsPage() {
                   </p>
                 )}
               </div>
+              <div className="flex justify-center sm:justify-start"> 
 
               <Link
                 to="/contactos"
-                className="mt-8 inline-flex items-center gap-3 rounded-full bg-[var(--color-prime)] px-6 py-3 font-semibold text-white shadow-sm ring-1 ring-emerald-700/20 hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+                className=" mt-8 inline-flex items-center gap-3 rounded-full bg-[var(--color-prime)] px-6 py-3 font-semibold text-white shadow-sm ring-1 ring-emerald-700/20 hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
               >
                 Saber mais
                 <span className="inline-grid place-items-center rounded-full bg-[#27a95b] p-1">
                   <img src="../src/assets/Home/rightarrow.svg" alt="" />
                 </span>
               </Link>
+              </div>
             </div>
 
             <div className="flex items-center justify-center w-22 h-22 md:h-full md:w-full lg:h-full -order-1 md:order-0">
@@ -122,7 +124,7 @@ function CardsGrid({ items, onCardClick }) {
         <article
           key={it.id}
           onClick={() => onCardClick(it)}
-          className="group cursor-pointer rounded-[20px] bg-white shadow-[0px_4px_23.5px_0_rgba(0,0,0,0.25)] ring-1 ring-black/5 p-7"
+          className="flex flex-col justify-center sm:justify-start items-center sm:items-start group cursor-pointer rounded-[20px] bg-white shadow-[0px_4px_23.5px_0_rgba(0,0,0,0.25)] ring-1 ring-black/5 p-7"
         >
           <div className="flex items-center gap-4 h-32 w-32">
             <img
@@ -134,7 +136,7 @@ function CardsGrid({ items, onCardClick }) {
           </div>
 
           {it.short && (
-            <p className="mt-4 text-base text-[var(--color-dark)] leading-relaxed line-clamp-3">
+            <p className="text-center sm:text-start mt-4 text-base text-[var(--color-dark)] leading-relaxed line-clamp-3">
               {it.short}
             </p>
           )}

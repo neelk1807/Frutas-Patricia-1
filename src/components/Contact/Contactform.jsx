@@ -28,7 +28,7 @@ export default function AuctionContactSimple() {
         <header className="text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-[60px] font-extrabold text-[var(--color-dark)]">
             Envie-nos uma mensagem.
-          </h2>
+          </h2> 
           <p className="mt-3 text-[var(--color-gray2)]">
             Contacte-nos através do formulário. 
             <br className="hidden sm:block" />
@@ -178,7 +178,7 @@ export default function AuctionContactSimple() {
 
             <button
               type="submit"
-              className="ml-auto inline-flex items-center gap-4 rounded-full bg-[var(--color-prime)] px-6 py-2.5 font-semibold text-white shadow-sm ring-1 ring-emerald-700/20 hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 cursor-pointer"
+              className="mx-auto sm:mx-0 ml-auto inline-flex items-center gap-4 rounded-full bg-[var(--color-prime)] px-6 py-2.5 font-semibold text-white shadow-sm ring-1 ring-emerald-700/20 hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 cursor-pointer"
             >
               Enviar
               <div className="arrow bg-[#27a95b] rounded-full p-1">

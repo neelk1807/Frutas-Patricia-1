@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -31,38 +31,35 @@ const products = [
 ];
 
 export default function OutrosProdutosSlider() {
-const settings = {
-  dots: true,
-  arrows: false,
-  infinite: true,
-  speed: 450,
-  slidesToShow: 2,   // desktop default
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 1024, // below 1024px
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 768, // below 768px
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-  dotsClass: "slick-dots custom-dots",
-  customPaging: () => <button className="dot" />,
-  appendDots: (dots) => (
-    <div className="mt-8">
-      <ul className="custom-dots-row">{dots}</ul>
-    </div>
-  ),
-};
+  const [slidesToShow, setSlidesToShow] = useState(3);
+  const updateSlides = () => {
+    const w = window.innerWidth;
+    if (w >= 1280) setSlidesToShow(3);
+    else if (w >= 1024) setSlidesToShow(2);
+    else setSlidesToShow(1);
+  };
 
+  useEffect(() => {
+    updateSlides(); 
+    window.addEventListener("resize", updateSlides);
+    return () => window.removeEventListener("resize", updateSlides);
+  }, []);
+
+  const settings = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 450,
+    slidesToShow,
+    slidesToScroll: 1,
+    dotsClass: "slick-dots custom-dots",
+    customPaging: () => <button className="dot" />,
+    appendDots: (dots) => (
+      <div className="mt-8">
+        <ul className="custom-dots-row">{dots}</ul>
+      </div>
+    ),
+  };
 
   return (
     <section className="w-full bg-[var(--color-graycustom)] py-12 sm:py-16 lg:py-25">

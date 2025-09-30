@@ -79,13 +79,13 @@ export default function Distribution() {
           {/* Title + short intro */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-15 mb-10 sm:mb-15">
             <div className="lg:col-span-3 sm:col-span-6 md:col-span-6">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-dark)] leading-tight">
+              <h2 className="text-center sm:text-start text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-dark)] leading-tight">
                 <span className="block">A empresa</span>
                 <span className="block">Lloretrans</span>
               </h2>
             </div>
 
-            <div className="lg:col-span-9 sm:col-span-6 md:col-span-6">
+            <div className="text-center sm:text-start lg:col-span-9 sm:col-span-6 md:col-span-6">
               <p className="text-[var(--color-gray2)] text-base sm:text-lg leading-relaxed">
                 A Lloretrans é uma empresa especializada no transporte
                 rodoviário de mercadorias, com foco no setor hortofrutícola. Com

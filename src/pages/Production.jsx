@@ -204,18 +204,18 @@ export default function Productions() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left: copy */}
             <div>
-              <h2 className="text-4xl sm:text-5xl lg:text-[60px] font-bold text-slate-900">
+              <h2 className="text-center sm:text-start text-4xl sm:text-5xl lg:text-[60px] font-bold text-slate-900">
                 Sustentabilidade
               </h2>
 
-              <p className="mt-6 text-[var(--color-gray2)] text-base sm:text-lg lg:text-xl leading-relaxed text-justify">
+              <p className="text-center smmt-6 text-[var(--color-gray2)] text-base sm:text-lg lg:text-xl leading-relaxed sm:text-justify">
                 Apostamos em materiais mais sustentáveis, que encontrem um
                 equilíbrio com o meio ambiente, e em simultâneo trabalhamos na
                 cultura interna da empresa de forma a incutir em toda a equipa
                 FPP, essa atitude e responsabilidade.
               </p>
 
-              <p className="mt-6 text-[var(--color-gray2)] text-base sm:text-lg lg:text-xl leading-relaxed text-justify">
+              <p className="text-center mt-6 text-[var(--color-gray2)] text-base sm:text-lg lg:text-xl leading-relaxed sm:text-justify">
                 Visamos que a responsabilidade deixe de ser uma obrigação, mas
                 sim um ato de consciência, e que a mensagem acabe por passar à
                 população em geral. Face às metas acima mencionadas temos como

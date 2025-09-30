@@ -193,7 +193,7 @@ export default function JoinTeam() {
           {/* Upload CV */}
           <div className="md:col-span-2">
             <div className="grid sm:items-center gap-3">
-              <label className="inline-flex">
+              <label className="inline-flex justify-center sm:justify-start">
                 <input
                   type="file"
                   name="cv"
@@ -202,7 +202,7 @@ export default function JoinTeam() {
                   onChange={(e) => handleFile(e.currentTarget)}
                   className="peer sr-only"
                 />
-                <span className="inline-flex items-center gap-2 rounded-full bg-[var(--color-prime)] px-4 py-2 font-semibold text-white shadow-sm ring-1 ring-emerald-700/20 hover:bg-[#27a95b] cursor-pointer">
+                <span className="inline-flex  items-center gap-2 rounded-full bg-[var(--color-prime)] px-4 py-2 font-semibold text-white shadow-sm ring-1 ring-emerald-700/20 hover:bg-[#27a95b] cursor-pointer">
                   <div className="arrow bg-[#27a95b] rounded-full p-1 -rotate-90">
                     <img src={arrow} alt="" />
                   </div>
@@ -242,7 +242,7 @@ export default function JoinTeam() {
 
             <button
               type="submit"
-              className="ml-auto inline-flex items-center gap-2 rounded-full bg-[var(--color-prime)] cursor-pointer px-6 py-2.5 font-semibold text-white shadow-sm ring-1 ring-emerald-700/20 hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+              className="mx-auto sm:mx-0 ml-auto inline-flex items-center gap-2 rounded-full bg-[var(--color-prime)] cursor-pointer px-6 py-2.5 font-semibold text-white shadow-sm ring-1 ring-emerald-700/20 hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
             >
               Enviar Candidatura
               <div className="arrow bg-[#27a95b] rounded-full p-1">

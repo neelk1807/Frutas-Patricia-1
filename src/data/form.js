@@ -166,7 +166,7 @@ export const data = [
           "Todos proveniente de culturas nacionais, são fruto da atenção e profissionalismo levados ao detalhe, resultando num gama única de artigos premium para consumo nacional e internacional.",
         ],
         mheading:
-          "A Westfarm é uma marca dedicada a variedades de artigos premium.  Qualidade extra, frescura e apresentação, são as suas características.",
+          "A Westfarm é uma marca dedicada a variedades de artigos premium. Qualidade extra, frescura e apresentação, são as suas características.",
         logo: mbrand2,
         thumb: pbrands2,
       },

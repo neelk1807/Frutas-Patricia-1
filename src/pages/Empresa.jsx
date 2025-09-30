@@ -42,7 +42,7 @@ export default function EmpresaThirtyYears() {
 
           {/* Images row: 4 cards, responsive */}
           <div className="mt-10 grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-6">
-            <figure className="overflow-hidden rounded-t-2xl shadow-md bg-white/5 mt-1.5">
+            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-1.5">
               <img
                 src={hero1}
                 alt="Fundadores"
@@ -51,7 +51,7 @@ export default function EmpresaThirtyYears() {
               />
             </figure>
 
-            <figure className="overflow-hidden rounded-t-2xl shadow-md bg-white/5 mt-0 sm:mt-21.5 lg:mt-21">
+            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-0 sm:mt-21.5 lg:mt-21">
               <img
                 src={hero2}
                 alt="Sede"
@@ -60,7 +60,7 @@ export default function EmpresaThirtyYears() {
               />
             </figure>
 
-            <figure className="overflow-hidden rounded-t-2xl shadow-md bg-white/5 mt-1.5">
+            <figure className="overflow-hidden rounded-[25px] rounded-b-0 sm:rounded-t-2xl shadow-md bg-white/5 mt-1.5">
               <img
                 src={hero3}
                 alt="Estufas"
@@ -69,7 +69,7 @@ export default function EmpresaThirtyYears() {
               />
             </figure>
 
-            <figure className="overflow-hidden rounded-t-2xl shadow-md bg-white/5 mt-0 sm:mt-21.5 lg:mt-21">
+            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-0 sm:mt-21.5 lg:mt-21">
               <img
                 src="../src/assets/Empresa/hero4.png"
                 alt="Frota"
@@ -140,14 +140,14 @@ export default function EmpresaThirtyYears() {
             {/* Title + short intro */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-15 mb-10 sm:mb-15">
               <div className="lg:col-span-6">
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-dark)] leading-tight">
+                <h2 className="text-3xl text-center sm:text-start sm:text-4xl lg:text-5xl font-bold text-[var(--color-dark)] leading-tight">
                   <span className="block">Linhas</span>
                   <span className="block">Estratégicas</span>
                 </h2>
               </div>
 
               <div className="lg:col-span-6 flex justify-end">
-                <p className="text-[var(--color-gray2)] text-base sm:text-lg leading-relaxed max-w-sm">
+                <p className="text-center sm:text-start text-[var(--color-gray2)] text-base sm:text-lg leading-relaxed max-w-sm">
                   Conheça as nossas vertentes de atuação e o nosso compromisso
                   com a excelência.
                 </p>

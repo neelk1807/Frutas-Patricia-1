@@ -93,7 +93,7 @@ export default function ContactStrip() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {/* Card: Email */}
-          <article className="rounded-2xl bg-[var(--color-whitecustom)] shadow-[0_8px_28px_rgba(0,0,0,0.15)] ring-1 ring-black/5 p-6">
+          <article className="text-center sm:text-left rounded-2xl bg-[var(--color-whitecustom)] shadow-[0_8px_28px_rgba(0,0,0,0.15)] ring-1 ring-black/5 p-6">
             <div className="flex-1 items-center gap-3">
               <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
                 <img src="../../assets/Contact/email.png" alt="" />
@@ -129,7 +129,7 @@ export default function ContactStrip() {
           </article>
 
           {/* Card: Telefone */}
-          <article className="rounded-2xl bg-[var(--color-whitecustom)] shadow-[0_8px_28px_rgba(0,0,0,0.15)] ring-1 ring-black/5 p-6">
+          <article className="text-center sm:text-left rounded-2xl bg-[var(--color-whitecustom)] shadow-[0_8px_28px_rgba(0,0,0,0.15)] ring-1 ring-black/5 p-6">
             <div className="flex-1 items-center gap-3">
               <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
                 <img src="../../assets/Contact/phone.png" alt="" />
@@ -165,7 +165,7 @@ export default function ContactStrip() {
           </article>
 
           {/* Card: Localização */}
-          <article className="rounded-2xl bg-[var(--color-whitecustom)] shadow-[0_8px_28px_rgba(0,0,0,0.15)] ring-1 ring-black/5 p-6">
+          <article className=" text-center sm:text-left rounded-2xl bg-[var(--color-whitecustom)] shadow-[0_8px_28px_rgba(0,0,0,0.15)] ring-1 ring-black/5 p-6">
             <div className="flex-1 items-center gap-3">
               <span className="inline-grid size-18 place-items-center rounded-full bg-[var(--color-whitecustom)] text-[var(--color-prime)]">
                 <img src="../../assets/Contact/map.png" alt="" />

@@ -23,7 +23,7 @@ import brand19 from "../../assets/Comman/brand19.png";
 import brand20 from "../../assets/Comman/brand20.png";
 import brand21 from "../../assets/Comman/brand21.png";
 
-// ✅ Replace string src with imported variables
+
 const DEFAULT_LOGOS = [
   { src: brand1, alt: "Demo Douro" },
   { src: brand2, alt: "Hortoriba" },
@@ -48,61 +48,53 @@ const DEFAULT_LOGOS = [
   { src: brand21, alt: "Seal" },
 ];
 
-
 export default function BrandMarqueeSlick({
   items,
-  visible = 9,
   interval = 3000,
   pauseOnHover = true,
   className = "bg-[var(--color-prime)]",
 }) {
   const sliderRef = useRef(null);
   const [paused, setPaused] = useState(false);
+  const [slidesToShow, setSlidesToShow] = useState(9);
 
-  const base = useMemo(() => (items?.length ? items : DEFAULT_LOGOS), [items]);
+  const logos = useMemo(() => (items?.length ? items : DEFAULT_LOGOS), [items]);
 
-  const looped = useMemo(() => {
-    if (!base.length) return [];
-    const target = visible + 1;
-    if (base.length >= target) return base;
-    const copies = Math.ceil(target / base.length);
-    return Array.from({ length: copies })
-      .flatMap(() => base)
-      .slice(0, target);
-  }, [base, visible]);
+  // Dynamically adjust slidesToShow based on window width
+  const updateSlides = () => {
+    const w = window.innerWidth;
+    if (w >= 1280) setSlidesToShow(9);
+    else if (w >= 1024) setSlidesToShow(7);
+    else if (w >= 768) setSlidesToShow(5);
+    else if (w >= 640) setSlidesToShow(4);
+    else setSlidesToShow(4);
+  };
 
   useEffect(() => {
-    if (looped.length === 0) return;
+    updateSlides(); // initial set
+    window.addEventListener("resize", updateSlides);
+    return () => window.removeEventListener("resize", updateSlides);
+  }, []);
+
+  // Autoplay interval
+  useEffect(() => {
     const id = setInterval(() => {
       if (!paused) sliderRef.current?.slickNext();
     }, interval);
     return () => clearInterval(id);
-  }, [interval, paused, looped.length]);
+  }, [interval, paused]);
 
   const settings = {
     arrows: false,
     dots: false,
-    infinite: looped.length > visible,
+    infinite: logos.length > slidesToShow,
     speed: 450,
-    slidesToShow: visible,
-    slidesToScroll: 1, 
+    slidesToShow,
+    slidesToScroll: 1,
     swipeToSlide: true,
     touchMove: true,
-    autoplay: false, 
+    autoplay: false,
     cssEase: "linear",
-    responsive: [
-      {
-        breakpoint: 1280,
-        settings: { slidesToShow: Math.max(visible - 2, 6) },
-      },
-      {
-        breakpoint: 1024,
-        settings: { slidesToShow: Math.max(visible - 4, 6) },
-      },
-      { breakpoint: 768, settings: { slidesToShow: Math.max(visible - 6, 4) } },
-      { breakpoint: 640, settings: { slidesToShow: Math.max(visible - 7, 4) } },
-      { breakpoint: 480, settings: { slidesToShow: 3 } },
-    ],
   };
 
   return (
@@ -111,9 +103,9 @@ export default function BrandMarqueeSlick({
       onMouseEnter={() => pauseOnHover && setPaused(true)}
       onMouseLeave={() => pauseOnHover && setPaused(false)}
     >
-      <div className="mx-auto  px-4 sm:px-6">
+      <div className="mx-auto w-full px-4 sm:px-6">
         <Slider ref={sliderRef} {...settings}>
-          {looped.map((logo, idx) => (
+          {logos.map((logo, idx) => (
             <div key={`${logo.src}-${idx}`} className="px-4">
               <img
                 src={logo.src}

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import slider1 from "../../assets/Empresa/slider1.png";
 import slider2 from "../../assets/Empresa/slider2.png";
@@ -8,6 +8,7 @@ import slider4 from "../../assets/Empresa/slider4.png";
 
 export default function InfraestruturasSlider() {
   const sliderRef = useRef(null);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 640);
 
   const slides = [
     {
@@ -51,22 +52,43 @@ export default function InfraestruturasSlider() {
       },
     },
   ];
+useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 640);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) {
+      const interval = setInterval(() => {
+        sliderRef.current?.slickNext();
+      }, 3000);
+      return () => clearInterval(interval);
+    }
+  }, [isMobile]);
+
 
   const settings = {
-    dots: false, // default: OFF (tablet/desktop)
-    dotsClass: "slick-dots mobile-dots",
+    dots: false,
+    dotsClass: "slick-dots mobile-dots", 
     arrows: false,
     infinite: true,
-    fade: true,
+   fade: true,
     speed: 600,
-    autoplay: false,
+   autoplay: false,     
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: false,
     responsive: [
       {
-        breakpoint: 640, // < 640px
-        settings: { dots: true },
+        breakpoint: 640, // mobile
+        settings: {
+          dots: true, 
+          fade: false, // fade must be false for mobile infinite scroll
+          swipe: true, // enable touch swipe
+          infinite: true, // infinite scroll on mobile
+        },
       },
     ],
   };
@@ -83,7 +105,7 @@ export default function InfraestruturasSlider() {
               {/* 1-col on mobile/tablet (text above, image below); 12-col on desktop */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
                 {/* Text */}
-                <div className="lg:col-span-5">
+                <div className="lg:col-span-5 flex flex-col sm:items-start items-center justify-center">
                   <span className="inline-flex items-center rounded-full bg-[var(--color-prime)] text-white px-5 py-2 text-sm font-semibold shadow-sm">
                     {s.tag}
                   </span>
@@ -107,7 +129,7 @@ export default function InfraestruturasSlider() {
                       className="hidden sm:block absolute left-0 top-1/2 -translate-y-1/2 focus:outline-none cursor-pointer"
                       aria-label="Slide anterior"
                     >
-                      <img  
+                      <img
                         src={s.images.left}
                         alt=""
                         className="h-[70%] w-28 sm:w-60 lg:w-68 object-cover rounded-[26px] hover:brightness-105 transition"

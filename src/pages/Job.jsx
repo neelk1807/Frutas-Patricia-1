@@ -270,7 +270,7 @@ export default function JobPage() {
             <button
               type="submit"
               disabled={!canSubmit || sending}
-              className={`sm:ml-auto inline-flex items-center justify-between gap-3 rounded-full px-6 py-3 font-semibold text-white
+              className={`mx-auto sm:mx-0 sm:ml-auto inline-flex items-center justify-between gap-3 rounded-full px-6 py-3 font-semibold text-white
                 ring-1 ring-emerald-700/20 transition
                 ${
                   canSubmit && !sending
