@@ -92,7 +92,7 @@ export default function BrandMarqueeSlick({
       if (!paused) sliderRef.current?.slickNext();
     }, interval);
     return () => clearInterval(id);
-  }, [interval, paused, base.length]);
+  }, [interval, paused, logos.length]);
 
   const settings = {
     arrows: false,
