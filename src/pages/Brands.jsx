@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { data as allData } from "../data/form.js";
 
 export default function ProductsPage() {
-  
   const marcas = Array.isArray(allData)
     ? allData.find((s) => s.id === "marcas")?.items ?? []
     : [];
@@ -12,7 +11,7 @@ export default function ProductsPage() {
     ? allData.find((s) => s.id === "empresas")?.items ?? []
     : [];
 
-  const [active, setActive] = useState(null); 
+  const [active, setActive] = useState(null);
 
   // --- modal helpers ---
   const onClose = useCallback(() => setActive(null), []);
@@ -39,7 +38,9 @@ export default function ProductsPage() {
             Marcas do Grupo
           </h1>
           <p className="my-8 text-[14px] md:text-[22px] text-[var(--color-dark)]">
-            O Grupo Patrícia Pilar reúne marcas complementares que, em conjunto, asseguram uma resposta abrangente às exigências do mercado, reforçando a posição do grupo como referência no setor.
+            O Grupo Patrícia Pilar reúne marcas complementares que, em conjunto,
+            asseguram uma resposta abrangente às exigências do mercado,
+            reforçando a posição do grupo como referência no setor.
           </p>
         </header>
 
@@ -51,7 +52,9 @@ export default function ProductsPage() {
             Empresas do grupo
           </h2>
           <p className="my-8 text-[14px] md:text-[22px] text-[var(--color-dark)]">
-            Com uma estratégia focada na expansão e na colaboração, o Grupo Patrícia Pilar tem consolidado a sua presença no setor, assegurando competitividade e capacidade de resposta às necessidades do mercado.
+            Com uma estratégia focada na expansão e na colaboração, o Grupo
+            Patrícia Pilar tem consolidado a sua presença no setor, assegurando
+            competitividade e capacidade de resposta às necessidades do mercado.
           </p>
         </header>
 
@@ -143,8 +146,10 @@ function CardsGrid({ items, onCardClick }) {
 
           <div className="mt-4">
             <Link
-              to="/contact"
-              onClick={(e) => e.stopPropagation()}
+              onClick={(e) => {
+                e.stopPropagation();
+                onCardClick(it); // open modal with this card's data
+              }}
               className="inline-flex items-center gap-2 text-[var(--color-prime)] font-bold hover:text-emerald-700"
             >
               Mais info
@@ -155,7 +160,6 @@ function CardsGrid({ items, onCardClick }) {
     </div>
   );
 }
-
 
 function Modal({ children, onClose }) {
   return (
@@ -170,8 +174,8 @@ function Modal({ children, onClose }) {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
-              viewBox="0 0 24 24"
-              fill="none"
+            viewBox="0 0 24 24"
+            fill="none"
             stroke="currentColor"
             strokeWidth="2"
           >

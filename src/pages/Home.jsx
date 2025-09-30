@@ -1,5 +1,6 @@
 // src/pages/Home.jsx
 import React from "react";
+import CountUp from "react-countup";
 import Specialties from "../components/Home/Specialties.jsx";
 import HeroSlider from "../components/Home/HeroSlider.jsx";
 import ProductSlider from "../components/Home/ProductSlider.jsx";
@@ -11,6 +12,7 @@ import infra1 from "../assets/Home/infra1.jpg";
 import infra2 from "../assets/Home/infra2.jpg";
 import productsec from "../assets/Home/productsec.jpg";
 import videoimage from "../assets/Home/videoimage.png"
+import { useInView } from "react-intersection-observer";
 
 
 
@@ -18,12 +20,18 @@ import videoimage from "../assets/Home/videoimage.png"
 
 export default function Home({
   items = [
-    { value: "+1500", label: "colaboradores" },
+    { value: 1500, prefix: "+", suffix: "", label: "colaboradores" },
     { value: "16", label: "nacionalidades" },
     { value: "33", label: "empresas do grupo" },
     { value: "700 ha", label: "produção própria" },
   ],
-}) {
+  
+})
+ {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // only run once
+    threshold: 0.3,    // start when 30% is visible
+  });
   return (
     <div className="max-w-auto mx-auto">
       <div className="hero">
@@ -82,26 +90,37 @@ export default function Home({
         <CertificationHero />
       </div>
       <div className="counter py-5 md:py-25">
-        <section className="w-full bg-[var(--color-whitecustom)]">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8 items-center">
-              {items.map((it, idx) => (
-                <div
-                  key={idx}
-                  className="text-center lg:text-center flex flex-col lg:items-center"
-                >
-                  <div className="text-3xl sm:text-7xl font-bold text-[var(--color-prime)] leading-none">
-                    {it.value}
-                  </div>
-                  <div className="mt-3 text-[var(--color-gray2)] font-bold text-sm sm:text-2xl">
-                    {it.label}
-                  </div>
+      <section className="w-full bg-[var(--color-whitecustom)]" ref={ref}>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8 items-center">
+            {items.map((it, idx) => (
+              <div
+                key={idx}
+                className="text-center lg:text-center flex flex-col lg:items-center"
+              >
+                {/* Animated Counter */}
+                <div className="text-3xl sm:text-6xl font-bold text-[var(--color-prime)] leading-none">
+                {inView ? (
+                  <CountUp
+                    start={0}
+                    end={parseInt(it.value)}
+                    duration={4}
+                    prefix={it.prefix}
+                    suffix={it.suffix}
+                  />
+                ) : (
+                  `${it.prefix}0${it.suffix}` // initial before animation
+                )}
+              </div>
+                <div className="mt-3 text-[var(--color-gray2)] font-bold text-sm sm:text-2xl">
+                  {it.label}
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+    </div>
 
       {/* infra section */}
       <div className="infra">
@@ -111,7 +130,7 @@ export default function Home({
               {/* Left: Text */}
               <div className="text-center lg:text-left">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[var(--color-dark)] leading-tight">
-                  Infra-estruturas
+                  Infraestruturas
                 </h2>
                 <p className="mt-6 text-gray-700 text-base sm:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
                   Com 45.000 m2 de área coberta, a empresa frutas patrícia pilar
@@ -119,8 +138,8 @@ export default function Home({
                   instalações do sector, no país.
                 </p>
                 <div className="mt-8 flex justify-center lg:justify-start">
-                  <button className="inline-flex items-center gap-4 rounded-full px-6 py-3 text-sm font-semibold shadow-sm ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
-                    Conhecer infra-estruturas
+                  <button onClick={() => window.location.href = "/empresa"} className="inline-flex items-center gap-4 rounded-full px-6 py-3 text-sm font-semibold shadow-sm ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
+                    conhecer infraestruturas
                     <div className="arrow bg-[#27a95b] rounded-full p-1">
                       <img src={arrow} alt="" />
                     </div>
@@ -194,7 +213,7 @@ export default function Home({
                 </p>
 
                 <div className="mt-8 flex justify-center lg:justify-start">
-                  <button className="inline-flex items-center gap-3 rounded-full px-6 py-3 text-sm font-semibold shadow-sm cursor-pointer ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
+                  <button onClick={() => window.location.href = "/production"} className="inline-flex items-center gap-3 rounded-full px-6 py-3 text-sm font-semibold shadow-sm cursor-pointer ring-1 ring-inset ring-emerald-700/20 bg-[var(--color-prime)] text-[var(--color-whitecustom)] hover:bg-[#27a95b] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
                     Ver mais
                     <div className="arrow bg-[#27a95b] rounded-full p-1">
                       <img src={arrow} alt="" />

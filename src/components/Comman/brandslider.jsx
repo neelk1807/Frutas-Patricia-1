@@ -22,6 +22,11 @@ import brand18 from "../../assets/Comman/brand18.png";
 import brand19 from "../../assets/Comman/brand19.png";
 import brand20 from "../../assets/Comman/brand20.png";
 import brand21 from "../../assets/Comman/brand21.png";
+import brand22 from "../../assets/Comman/brand22.png";
+import brand23 from "../../assets/Comman/brand23.png";
+import brand24 from "../../assets/Comman/brand24.png";
+import brand25 from "../../assets/Comman/brand25.png";
+import brand26 from "../../assets/Comman/brand26.png";
 
 
 const DEFAULT_LOGOS = [
@@ -46,6 +51,11 @@ const DEFAULT_LOGOS = [
   { src: brand19, alt: "Seal" },
   { src: brand20, alt: "Seal" },
   { src: brand21, alt: "Seal" },
+  { src: brand22, alt: "Seal" },
+  { src: brand23, alt: "Seal" },
+  { src: brand24, alt: "Seal" },
+  { src: brand25, alt: "Seal" },
+  { src: brand26, alt: "Seal" },
 ];
 
 export default function BrandMarqueeSlick({
@@ -82,7 +92,7 @@ export default function BrandMarqueeSlick({
       if (!paused) sliderRef.current?.slickNext();
     }, interval);
     return () => clearInterval(id);
-  }, [interval, paused]);
+  }, [interval, paused, base.length]);
 
   const settings = {
     arrows: false,
@@ -110,7 +120,7 @@ export default function BrandMarqueeSlick({
               <img
                 src={logo.src}
                 alt={logo.alt || "brand"}
-                className="h-20 sm:h-20 w-full py-3 object-contain mx-auto select-none items-center"
+                className="h-30 sm:h-30 w-full py-3 object-contain mx-auto select-none"
                 draggable="false"
                 loading="lazy"
               />

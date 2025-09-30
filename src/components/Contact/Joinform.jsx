@@ -5,8 +5,8 @@ export default function JoinTeam() {
   const [sent, setSent] = useState(false);
   const [cvName, setCvName] = useState("");
 
-  // Max file size: 8 MB
-  const MAX_FILE_MB = 8;
+  // Max file size: 2 MB
+  const MAX_FILE_MB = 2;
   const MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024;
   const ACCEPTED = [
     "application/pdf",

@@ -66,9 +66,9 @@ export default function OutrosProdutosSlider() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-8 flex items-center justify-between">
           <h2 className="text-2xl sm:text-3xl lg:text-[60px] font-bold text-[var(--color-dark)]">Outros produtos</h2>
-          <a href="#" className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-dark)] hover:opacity-80">
+          <button onClick={() => window.location.href = "/produtos"} className="cursor-pointer inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-dark)] hover:opacity-80">
             Ver todos <span aria-hidden><img src="../src/assets/Home/greenarrow.svg" alt="" /></span>
-          </a>
+          </button>
         </div>
 
         <Slider {...settings}>

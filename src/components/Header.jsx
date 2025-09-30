@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import {FaLinkedinIn} from "react-icons/fa";
 import uk from "../assets/Flag/uk.png";
 import es from "../assets/Flag/es.png";
 import pt from "../assets/Flag/pt.png";
 import fb from "../assets/Comman/facebook-fill.svg";
 import ina from "../assets/Comman/instagram-fill.svg";
-import yt from "../assets/Comman/youtube-fill.svg";
 import cross from "../assets/Home/cross.svg";
 
 
@@ -15,7 +16,7 @@ const navItems = [
   { label: "Produção", href: "/production" },
   { label: "Marcas", href: "/brands" },
   { label: "Distribuição", href: "/distribution" },
-  { label: "Leilão", href: "/auction" },
+  { label: "Leilão", href: "https://leilao.patriciapilar.pt/login.php" },
   { label: "Contactos", href: "/contact" },
 ];
 
@@ -52,21 +53,21 @@ export default function Header() {
           </div>
           <div className="hidden sm:flex items-center gap-4 text-right">
             <span className="sm:inline">Segue-nos nas redes sociais</span>
-            <a href="#" className="hover:opacity-80">
+            <a href="https://www.facebook.com/frutaspatriciapilar.lda/" className="hover:opacity-80">
               <img src={fb} alt="" />
             </a>
-            <a href="#" className="hover:opacity-80">
+            <a href="https://www.instagram.com/frutaspatriciapilar/" className="hover:opacity-80">
               <img src={ina} alt="" />
             </a>
-            <a href="#" className="hover:opacity-80">
-              <img src={yt} alt="" />
+            <a href="https://www.linkedin.com/company/frutaspatriciapilar" className="hover:opacity-80">
+              <FaLinkedinIn />
             </a>
           </div>
         </div>
       </div>
 
       {/* Main nav area */}
-      <div className="relative bg-[var(--color-whitecustom)] shadow-md">
+      <div className="relative bg-[var(--color-whitecustom)] shadow-lg">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 md:py-6">
           {/* Mobile hamburger */}
           <div className="lg:hidden">
@@ -122,20 +123,20 @@ export default function Header() {
 
           {/* Logo (center) */}
           <div className="absolute top-2 left-1/2 -translate-x-1/2 -translate-y-1">
-            <div className="rounded-full bg-[var(--color-whitecustom)] p-2 shadow-lg">
+            <div className="rounded-full bg-[var(--color-whitecustom)] p-2">
               <a rel="stylesheet" href="/">
                 <img
                   src="/logo.png"
                   alt="Patrícia Pilar"
-                  className="h-26 w-26.5 rounded-full"
+                  className="h-26 w-27.5 rounded-full"
                 />
               </a>
             </div>
           </div>
 
           {/* Right nav (desktop) */}
-          <div className="flex items-center gap-6">
-            <ul className="hidden lg:flex gap-[64px] font-medium">
+          <div className="flex items-center gap-[64px]">
+            <ul className="hidden lg:flex gap-[69px] font-medium">
               {navItems.slice(4).map((item) =>
                 item.href.startsWith("#") ? (
                   <li key={item.href}>

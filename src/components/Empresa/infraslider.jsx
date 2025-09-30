@@ -12,7 +12,7 @@ export default function InfraestruturasSlider() {
 
   const slides = [
     {
-      tag: "Infra-estruturas",
+      tag: "Infraestruturas",
       title: "Porta de embarque",
       desc: "Atualmente com 24 cais de cargas e descargas, as mesmas permitem uma constante operacionalização e dinâmica de recolha e envio de produtos 24h/dia.",
       images: {
@@ -22,7 +22,7 @@ export default function InfraestruturasSlider() {
       },
     },
     {
-      tag: "Infra-estruturas",
+      tag: "Infraestruturas",
       title: "Armazenamento",
       desc: "Capacidade para mais de 2000 toneladas de armazenamento em um espaço de quase 5000 m2. Isso garante uma gestão de produtos com qualidade e frescura.",
       images: {
@@ -32,8 +32,8 @@ export default function InfraestruturasSlider() {
       },
     },
     {
-      tag: "Infra-estruturas",
-      title: "CÂMARAS REFRIGERADAS",
+      tag: "Infraestruturas",
+      title: "Câmaras refrigeradas",
       desc: "Contamos com uma capacidade de armazenamento refrigerado até 10.000 toneladas de produtos, mantidos em atmosfera controlada, garantindo a frescura e qualidade dos produtos.",
       images: {
         left: slider4,
@@ -42,8 +42,8 @@ export default function InfraestruturasSlider() {
       },
     },
     {
-      tag: "Infra-estruturas",
-      title: "CENTRO DE OPERAÇÕEs",
+      tag: "Infraestruturas",
+      title: "Centro de operações",
       desc: "A zona de embalamento tem uma capacidade para 300 funcionários, que preparam 600 toneladas/dia. Com 14 linhas de embalamento de alta tecnologia para diversas frutas e legumes, incluindo máquinas de flowpack, retrátil e sacos.",
       images: {
         left: slider3,

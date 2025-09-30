@@ -2,6 +2,7 @@ import React from "react";
 import imagetomato from "../../assets/Home/tomatotree.jpg";
 import badgetomato from "../../assets/Home/portugal.png";
 import arrow from "../../assets/Home/rightarrow.svg"
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -12,8 +13,11 @@ export default function CertificationHero({
   title = "as nossas\ncertificações",
   description = "O nosso Departamento de Qualidade da trabalha continuamente de forma a implementar diversas normas, que visam assegurar e garantir a segurança alimentar do consumidor final.",
   ctaText = "Ver mais",
-  onCtaClick = () => {},
-}) {
+}) {const navigate = useNavigate();
+
+  const onCtaClick = () => {
+    navigate("/production#home-production");
+  };
   return (
     <section className="w-full bg-[var(--color-whitecustom)]">
       <div className="mx-auto max-w-full px-4 sm:px-6 lg:px-0 py-12 lg:py-20">
