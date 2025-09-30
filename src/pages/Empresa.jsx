@@ -51,7 +51,7 @@ export default function EmpresaThirtyYears() {
               />
             </figure>
 
-            <figure className="overflow-hidden rounded-t-2xl shadow-md bg-white/5 mt-0 sm:mt-21.5 lg:mt-21">
+            <figure className="overflow-hidden rounded-t-2xl shadow-md bg-white/5 mt-0 sm:mt-23 md:mt-23 lg:mt-21">
               <img
                 src={hero2}
                 alt="Sede"
@@ -69,7 +69,7 @@ export default function EmpresaThirtyYears() {
               />
             </figure>
 
-            <figure className="overflow-hidden rounded-t-2xl shadow-md bg-white/5 mt-0 sm:mt-21.5 lg:mt-21">
+            <figure className="overflow-hidden rounded-t-2xl shadow-md bg-white/5 mt-0 sm:mt-23 md:mt-23 lg:mt-21">
               <img
                 src={hero4}
                 alt="Frota"
@@ -147,7 +147,7 @@ export default function EmpresaThirtyYears() {
               </div>
 
               <div className="lg:col-span-6 flex justify-end">
-                <p className="text-[var(--color-gray2)] text-base sm:text-lg leading-relaxed max-w-sm">
+                <p className="text-[var(--color-gray2)] text-base sm:text-lg leading-relaxed max-w-sm items-center flex">
                   Conheça as nossas vertentes de atuação e o nosso compromisso
                   com a excelência.
                 </p>

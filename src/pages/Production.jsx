@@ -17,9 +17,9 @@ export default function Productions() {
       <div className="product py-5">
         <section className="w-full bg-[var(--color-whitecustom)] py-12 lg:py-20">
           <div className="mx-auto max-w-full pl-0 sm:pl-6 lg:pl-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center lg:gap-60">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center lg:gap-50">
               {/* Left: Text content */}
-              <div className="text-center lg:text-left justify-end sm:justify-center md:justify-center lg:justify-end grid px-5">
+              <div className="text-center lg:text-left justify-end sm:justify-center md:justify-center lg:justify-center grid px-5 ml-0 lg:ml-[280px]">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
                   <span className="text-[var(--color-prime)]">
                     O melhor da produção nacional
@@ -44,7 +44,7 @@ export default function Productions() {
                   <img
                     src={productsec}
                     alt="Produção própria zona oeste"
-                    className="w-full h-[300px] sm:h-[520px] lg:h-[700px] object-cover"
+                    className="w-full h-[200px] sm:h-[420px] lg:h-[600px] object-cover"
                   />
                 </div>
               </div>
@@ -207,10 +207,9 @@ export default function Productions() {
             {/* Right: two square cards */}
             <div className="flex flex-col gap-8 items-center lg:items-end">
               <div
-                className="rounded-3xl bg-[var(--color-whitecustom)] p-6 sm:p-8 ring-1 ring-slate-900/5
-                            shadow-[0_15px_35px_0_rgba(4,58,83,0.15)]"
+                className="rounded-3xl bg-[var(--color-whitecustom)] p-6 sm:p-8 ring-1 ring-slate-900/5 shadow-[0_15px_35px_0_rgba(4,58,83,0.15)]"
               >
-                <div className="h-40 w-40 sm:h-44 sm:w-44 md:h-50 md:w-50 lg:h-55 lg:w-55">
+                <div className="h-40 w-40 sm:h-44 sm:w-44 md:h-35 md:w-35 lg:h-40 lg:w-40">
                   <img
                     src={iso}
                     alt="ISO 14001"
@@ -224,7 +223,7 @@ export default function Productions() {
                 className="rounded-3xl bg-[var(--color-whitecustom)] p-6 sm:p-8 ring-1 ring-slate-900/5
                             shadow-[0_15px_35px_0_rgba(4,58,83,0.15)]"
               >
-                <div className="h-40 w-40 sm:h-44 sm:w-44 md:h-50 md:w-50 lg:h-55 lg:w-55">
+                <div className="h-40 w-40 sm:h-44 sm:w-44 md:h-35 md:w-35 lg:h-40 lg:w-40">
                   <img
                     src={grace}
                     alt="GRACE • Empresa Associada"

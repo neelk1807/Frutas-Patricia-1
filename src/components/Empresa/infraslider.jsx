@@ -32,7 +32,7 @@ export default function InfraestruturasSlider() {
     },
     {
       tag: "Infraestruturas",
-      title: "CÂMARAS REFRIGERADAS",
+      title: "Câmaras refrigeradas",
       desc: "Contamos com uma capacidade de armazenamento refrigerado até 10.000 toneladas de produtos, mantidos em atmosfera controlada, garantindo a frescura e qualidade dos produtos.",
       images: {
         left: slider4,
@@ -42,7 +42,7 @@ export default function InfraestruturasSlider() {
     },
     {
       tag: "Infraestruturas",
-      title: "CENTRO DE OPERAÇÕEs",
+      title: "Centro de operações",
       desc: "A zona de embalamento tem uma capacidade para 300 funcionários, que preparam 600 toneladas/dia. Com 14 linhas de embalamento de alta tecnologia para diversas frutas e legumes, incluindo máquinas de flowpack, retrátil e sacos.",
       images: {
         left: slider3,
@@ -59,7 +59,8 @@ export default function InfraestruturasSlider() {
     infinite: true,
     fade: true,
     speed: 600,
-    autoplay: false,
+    autoplay: true,      
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: false,
