@@ -130,7 +130,7 @@ export default function Home({
               {/* Left: Text */}
               <div className="text-center lg:text-left">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[var(--color-dark)] leading-tight">
-                  Infra-estruturas
+                  Infraestruturas
                 </h2>
                 <p className="mt-6 text-gray-700 text-base sm:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
                   Com 45.000 m2 de área coberta, a empresa frutas patrícia pilar

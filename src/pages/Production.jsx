@@ -82,11 +82,11 @@ export default function Productions() {
               </div>
               {/* Right: Image */}
               <div className="order-first lg:order-none">
-                <div className="overflow-hidden">
+                <div className="overflow-hidden justify-end flex">
                   <img
                     src={map}
                     alt="Produção própria zona oeste"
-                    className="w-full h-auto sm:h-auto md:h-auto lg:h-auto object-cover"
+                    className="w-[82%] h-auto sm:h-auto md:h-auto lg:h-[82vh] object-contain justify-end flex"
                   />
                 </div>
               </div>
@@ -97,7 +97,7 @@ export default function Productions() {
 
       {/* lelio section */}
       <div className="lelio">
-        <section className="w-full bg-[var(--color-whitecustom)] py-12 lg:py-20">
+        <section className="w-full bg-[var(--color-whitecustom)] py-12 lg:py-20" id="home-production">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-22 items-center">
               {/* Right: Image */}
@@ -106,7 +106,7 @@ export default function Productions() {
                   <img
                     src={lelio}
                     alt="Produção própria zona oeste"
-                    className="w-full h-auto sm:h-auto lg:h-auto object-cover"
+                    className=" min-h-40vh sm:h-auto lg:min-h-20vh object-cover"
                   />
                 </div>
               </div>

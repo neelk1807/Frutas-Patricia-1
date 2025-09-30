@@ -66,7 +66,7 @@ export default function Header() {
       </div>
 
       {/* Main nav area */}
-      <div className="relative bg-[var(--color-whitecustom)] shadow-md">
+      <div className="relative bg-[var(--color-whitecustom)] shadow-lg">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 md:py-6">
           {/* Mobile hamburger */}
           <div className="lg:hidden">
@@ -122,20 +122,20 @@ export default function Header() {
 
           {/* Logo (center) */}
           <div className="absolute top-2 left-1/2 -translate-x-1/2 -translate-y-1">
-            <div className="rounded-full bg-[var(--color-whitecustom)] p-2 shadow-lg">
+            <div className="rounded-full bg-[var(--color-whitecustom)] p-2">
               <a rel="stylesheet" href="/">
                 <img
                   src="/logo.png"
                   alt="Patrícia Pilar"
-                  className="h-26 w-26.5 rounded-full"
+                  className="h-26 w-27.5 rounded-full"
                 />
               </a>
             </div>
           </div>
 
           {/* Right nav (desktop) */}
-          <div className="flex items-center gap-6">
-            <ul className="hidden lg:flex gap-[64px] font-medium">
+          <div className="flex items-center gap-[64px]">
+            <ul className="hidden lg:flex gap-[69px] font-medium">
               {navItems.slice(4).map((item) =>
                 item.href.startsWith("#") ? (
                   <li key={item.href}>

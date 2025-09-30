@@ -76,8 +76,9 @@ export default function Footer() {
               />
             </div>
             <p className="mt-5 max-w-xs text-[var(--color-gray2)]">
-              Empresa dedicada à produção, comercialização e distribuição de
-              produtos hortofrutícolas
+              Empresa dedicada à produção,<br/>
+comercialização e distribuição<br/>
+de produtos hortofrutícolas
             </p>
 
             {/* Socials */}
