@@ -66,7 +66,7 @@ export default function BrandMarqueeSlick({
 }) {
   const sliderRef = useRef(null);
   const [paused, setPaused] = useState(false);
-  const [slidesToShow, setSlidesToShow] = useState(9);
+  const [slidesToShow, setSlidesToShow] = useState(9); 
 
   const logos = useMemo(() => (items?.length ? items : DEFAULT_LOGOS), [items]);
 
