@@ -1,10 +1,8 @@
 import React from "react";
 import imagetomato from "../../assets/Home/tomatotree.jpg";
 import badgetomato from "../../assets/Home/portugal.png";
-import arrow from "../../assets/Home/rightarrow.svg"
+import arrow from "../../assets/Home/rightarrow.svg";
 import { useNavigate } from "react-router-dom";
-
-
 
 export default function CertificationHero({
   imageSrc = imagetomato,
@@ -13,21 +11,24 @@ export default function CertificationHero({
   title = "as nossas\ncertificações",
   description = "O nosso Departamento de Qualidade da trabalha continuamente de forma a implementar diversas normas, que visam assegurar e garantir a segurança alimentar do consumidor final.",
   ctaText = "Ver mais",
-}) {const navigate = useNavigate();
+}) {
+  const navigate = useNavigate();
 
-const onCtaClick = () => {
-  navigate("/production#certifications");
+  const onCtaClick = () => {
+    navigate("/production#certifications");
 
-  setTimeout(() => {
-    const section = document.getElementById("certifications");
-    if (section) {
-      const yOffset = -200;
-      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    setTimeout(() => {
+      const section = document.getElementById("certifications");
+      if (section) {
+        const isMobile = window.innerWidth <= 640;
+        const yOffset = isMobile ? -150 : -200;
+        const y =
+          section.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
-      window.scrollTo({ top: y, behavior: "smooth" });
-    }
-  }, 100);
-};
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
+    }, 100);
+  };
 
   return (
     <section className="w-full bg-[var(--color-whitecustom)]">
@@ -45,9 +46,7 @@ const onCtaClick = () => {
             </div>
 
             {/* Circular badge */}
-            <div
-              className="absolute -bottom-10 right-6 sm:-right-15 sm:bottom-15 lg:-right-15 lg:bottom-20 hidden sm:hidden md:block md:right-0 md:-bottom-15 lg:block"
-            >
+            <div className="absolute -bottom-10 right-6 sm:-right-15 sm:bottom-15 lg:-right-15 lg:bottom-20 hidden sm:hidden md:block md:right-0 md:-bottom-15 lg:block">
               <div className="relative h-28 w-28 sm:h-32 sm:w-32 lg:h-40 lg:w-40 rounded-full bg-[var(--color-whitecustom)] shadow-[10px_13px_30px_0_rgba(4,58,83,0.24)] grid place-items-center">
                 <div className="absolute inset-0 rounded-full ring-1 ring-black/5" />
                 <img
