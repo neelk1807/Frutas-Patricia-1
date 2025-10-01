@@ -15,9 +15,20 @@ export default function CertificationHero({
   ctaText = "Ver mais",
 }) {const navigate = useNavigate();
 
-  const onCtaClick = () => {
-    navigate("/production#home-production");
-  };
+const onCtaClick = () => {
+  navigate("/production#certifications");
+
+  setTimeout(() => {
+    const section = document.getElementById("certifications");
+    if (section) {
+      const yOffset = -200;
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  }, 100);
+};
+
   return (
     <section className="w-full bg-[var(--color-whitecustom)]">
       <div className="mx-auto max-w-full px-4 sm:px-6 lg:px-0 py-12 lg:py-20">

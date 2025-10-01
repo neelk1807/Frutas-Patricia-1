@@ -57,3 +57,7 @@
 .mobile-dots li.slick-active button {
   background: #059669; transform: scaleX(3);
 }
+
+html {
+  scroll-behavior: smooth;
+}

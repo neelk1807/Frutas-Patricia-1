@@ -99,7 +99,7 @@ export default function Productions() {
       <div className="lelio">
         <section className="w-full bg-[var(--color-whitecustom)] py-12 lg:py-20" id="home-production">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-22 items-center">
+            <div id="certifications" className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-22 items-center">
               {/* Right: Image */}
               <div className="order-first lg:order-none">
                 <div className="overflow-hidden">
