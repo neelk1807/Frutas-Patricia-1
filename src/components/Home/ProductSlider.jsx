@@ -31,10 +31,10 @@ const products = [
 ];
 
 export default function OutrosProdutosSlider() {
-  const [slidesToShow, setSlidesToShow] = useState(3);
+  const [slidesToShow, setSlidesToShow] = useState(2);
   const updateSlides = () => {
     const w = window.innerWidth;
-    if (w >= 1280) setSlidesToShow(3);
+    if (w >= 1280) setSlidesToShow(2);
     else if (w >= 1024) setSlidesToShow(2);
     else setSlidesToShow(1);
   };

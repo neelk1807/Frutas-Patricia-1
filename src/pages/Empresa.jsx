@@ -60,7 +60,7 @@ export default function EmpresaThirtyYears() {
               />
             </figure>
 
-            <figure className="overflow-hidden rounded-[25px] rounded-b-0 sm:rounded-t-2xl shadow-md bg-white/5 mt-1.5">
+            <figure className="overflow-hidden rounded-[25px] sm:rounded-b-none sm:rounded-t-2xl shadow-md bg-white/5 mt-1.5">
               <img
                 src={hero3}
                 alt="Estufas"
