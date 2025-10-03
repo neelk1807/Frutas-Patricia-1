@@ -89,7 +89,7 @@ export default function Home({
         {/* certification Section */}
         <CertificationHero />
       </div>
-      <div className="counter py-5 md:py-25">
+      <div className="counter py-5 md:py-8">
       <section className="w-full bg-[var(--color-whitecustom)]" ref={ref}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8 items-center">
